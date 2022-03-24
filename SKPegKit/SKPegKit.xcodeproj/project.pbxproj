@@ -34,6 +34,7 @@
 		6FD268C527ECBB8B00C37B5D /* TDTestScaffold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTestScaffold.h; sourceTree = "<group>"; };
 		6FD268C927ECBD2F00C37B5D /* TDTemplateEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTemplateEngine.h; sourceTree = "<group>"; };
 		6FD268CA27ECBD2F00C37B5D /* TDTemplateEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTemplateEngine.m; sourceTree = "<group>"; };
+		6FD268CD27ECC02600C37B5D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		6FD268A127ECBB4600C37B5D = {
 			isa = PBXGroup;
 			children = (
+				6FD268CD27ECC02600C37B5D /* README.md */,
 				6FD268AD27ECBB4600C37B5D /* SKPegKit */,
 				6FD268B927ECBB4600C37B5D /* SKPegKitTests */,
 				6FD268AC27ECBB4600C37B5D /* Products */,
