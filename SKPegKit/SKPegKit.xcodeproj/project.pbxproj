@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0873BF24748100E794AE8958 /* libPods-SKPegKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC20404B808DF1FE5233155 /* libPods-SKPegKitTests.a */; };
 		6FD268B627ECBB4600C37B5D /* SKPegKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */; };
-		6FD268BB27ECBB4600C37B5D /* SKPegKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268BA27ECBB4600C37B5D /* SKPegKitTests.m */; };
 		6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268AE27ECBB4600C37B5D /* SKPegKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268CB27ECBD2F00C37B5D /* TDTemplateEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268C927ECBD2F00C37B5D /* TDTemplateEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268CC27ECBD2F00C37B5D /* TDTemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268CA27ECBD2F00C37B5D /* TDTemplateEngine.m */; };
@@ -43,6 +42,7 @@
 		6FD2691327EE055900C37B5D /* TDTestScaffold.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2691227EE055900C37B5D /* TDTestScaffold.m */; };
 		6FD2691627EE05E000C37B5D /* PKReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2691427EE05E000C37B5D /* PKReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD2691727EE05E000C37B5D /* PKReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2691527EE05E000C37B5D /* PKReader.m */; };
+		6FD2691A27EE121400C37B5D /* PKReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2691927EE121400C37B5D /* PKReaderTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +61,6 @@
 		6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKPegKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD268AE27ECBB4600C37B5D /* SKPegKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPegKit.h; sourceTree = "<group>"; };
 		6FD268B527ECBB4600C37B5D /* SKPegKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKPegKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FD268BA27ECBB4600C37B5D /* SKPegKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKPegKitTests.m; sourceTree = "<group>"; };
 		6FD268C527ECBB8B00C37B5D /* TDTestScaffold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTestScaffold.h; sourceTree = "<group>"; };
 		6FD268C927ECBD2F00C37B5D /* TDTemplateEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTemplateEngine.h; sourceTree = "<group>"; };
 		6FD268CA27ECBD2F00C37B5D /* TDTemplateEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTemplateEngine.m; sourceTree = "<group>"; };
@@ -97,6 +96,7 @@
 		6FD2691227EE055900C37B5D /* TDTestScaffold.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTestScaffold.m; sourceTree = "<group>"; };
 		6FD2691427EE05E000C37B5D /* PKReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKReader.h; sourceTree = "<group>"; };
 		6FD2691527EE05E000C37B5D /* PKReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKReader.m; sourceTree = "<group>"; };
+		6FD2691927EE121400C37B5D /* PKReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKReaderTests.m; sourceTree = "<group>"; };
 		C6A390F2019F44A18CB49379 /* Pods-SKPegKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKPegKitTests.debug.xcconfig"; path = "Target Support Files/Pods-SKPegKitTests/Pods-SKPegKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,7 +177,9 @@
 		6FD268B927ECBB4600C37B5D /* SKPegKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				6FD268BA27ECBB4600C37B5D /* SKPegKitTests.m */,
+				6FD268C527ECBB8B00C37B5D /* TDTestScaffold.h */,
+				6FD2691227EE055900C37B5D /* TDTestScaffold.m */,
+				6FD2691827EE11CC00C37B5D /* PEGKit Tests */,
 				6FD268C627ECBBEC00C37B5D /* TDTemplateEngine Tests */,
 			);
 			path = SKPegKitTests;
@@ -186,8 +188,6 @@
 		6FD268C627ECBBEC00C37B5D /* TDTemplateEngine Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6FD268C527ECBB8B00C37B5D /* TDTestScaffold.h */,
-				6FD2691227EE055900C37B5D /* TDTestScaffold.m */,
 				6FD268C727ECBC1F00C37B5D /* Expression Tests */,
 			);
 			path = "TDTemplateEngine Tests";
@@ -326,6 +326,14 @@
 				6FD2690327ED764100C37B5D /* XPParser.m */,
 			);
 			path = Parser;
+			sourceTree = "<group>";
+		};
+		6FD2691827EE11CC00C37B5D /* PEGKit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6FD2691927EE121400C37B5D /* PKReaderTests.m */,
+			);
+			path = "PEGKit Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,7 +509,7 @@
 			files = (
 				6FD2691327EE055900C37B5D /* TDTestScaffold.m in Sources */,
 				6FD268F827ED5CFC00C37B5D /* XPBaseExpressionTests.m in Sources */,
-				6FD268BB27ECBB4600C37B5D /* SKPegKitTests.m in Sources */,
+				6FD2691A27EE121400C37B5D /* PKReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
