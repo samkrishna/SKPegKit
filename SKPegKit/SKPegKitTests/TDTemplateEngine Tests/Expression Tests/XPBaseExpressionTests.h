@@ -6,9 +6,6 @@
 //
 
 #import "TDTestScaffold.h"
-#import "XPExpression.h"
-#import "XPParser.h"
-@import XCTest;
 
 @interface XPBaseExpressionTests : XCTestCase
 - (NSArray *)tokenize:(NSString *)input;

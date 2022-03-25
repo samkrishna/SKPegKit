@@ -5,9 +5,7 @@
 //  Created by Sam Krishna on 3/25/22.
 //
 
-@import XCTest;
 #import "TDTestScaffold.h"
-#import "PKReader.h"
 
 @interface PKReaderTests : XCTestCase {
     PKReader *reader;
