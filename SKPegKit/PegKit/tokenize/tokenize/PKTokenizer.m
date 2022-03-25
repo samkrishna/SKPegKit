@@ -5,10 +5,7 @@
 //  Created by Sam Krishna on 3/24/22.
 //
 
-#import "PKToken.h"
-#import "PKTokenizerState.h"
-#import "PKTokenizer.h"
-#import "PKReader.h"
+#import <SKPegKit/SKPegKit.h>
 
 #define STATE_COUNT 256
 
@@ -24,6 +21,16 @@
 @property (nonatomic, readwrite, strong) PKReader *reader;
 @property (nonatomic, readwrite, strong) NSMutableArray *tokenizerStates;
 @property (nonatomic, readwrite, assign) NSUInteger lineNumber;
+@property (nonatomic, readwrite, strong) PKNumberState *numberState;
+@property (nonatomic, readwrite, strong) PKQuoteState *quoteState;
+@property (nonatomic, readwrite, strong) PKCommentState *commentState;
+@property (nonatomic, readwrite, strong) PKSymbolState *symbolState;
+@property (nonatomic, readwrite, strong) PKWhitespaceState *whitespaceState;
+@property (nonatomic, readwrite, strong) PKWordState *wordState;
+@property (nonatomic, readwrite, strong) PKDelimitState *delimitState;
+@property (nonatomic, readwrite, strong) PKURLState *URLState;
+@property (nonatomic, readwrite, strong) PKEmailState *emalState;
+@property (nonatomic, readwrite, strong) PKHashtagState *hashtagState;
 
 - (instancetype)initWithString:(NSString *)str stream:(NSInputStream *)stm;
 - (PKTokenizerState *)tokenizerStateFor:(PKUniChar)c;
