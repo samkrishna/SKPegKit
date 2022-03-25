@@ -37,6 +37,8 @@
 		6FD2690927ED76F300C37B5D /* PKParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690727ED76F300C37B5D /* PKParser.m */; };
 		6FD2690C27ED77ED00C37B5D /* PKTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2690A27ED77ED00C37B5D /* PKTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD2690D27ED77ED00C37B5D /* PKTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690B27ED77ED00C37B5D /* PKTokenizer.m */; };
+		6FD2691027ED78F800C37B5D /* PKTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2690E27ED78F800C37B5D /* PKTokenizerState.h */; };
+		6FD2691127ED78F800C37B5D /* PKTokenizerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690F27ED78F800C37B5D /* PKTokenizerState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		6FD2690727ED76F300C37B5D /* PKParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKParser.m; sourceTree = "<group>"; };
 		6FD2690A27ED77ED00C37B5D /* PKTokenizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKTokenizer.h; sourceTree = "<group>"; };
 		6FD2690B27ED77ED00C37B5D /* PKTokenizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTokenizer.m; sourceTree = "<group>"; };
+		6FD2690E27ED78F800C37B5D /* PKTokenizerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKTokenizerState.h; sourceTree = "<group>"; };
+		6FD2690F27ED78F800C37B5D /* PKTokenizerState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTokenizerState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +240,8 @@
 				6FD268EF27ED4BB300C37B5D /* PKToken.m */,
 				6FD2690A27ED77ED00C37B5D /* PKTokenizer.h */,
 				6FD2690B27ED77ED00C37B5D /* PKTokenizer.m */,
+				6FD2690E27ED78F800C37B5D /* PKTokenizerState.h */,
+				6FD2690F27ED78F800C37B5D /* PKTokenizerState.m */,
 			);
 			path = tokenize;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				6FD2690C27ED77ED00C37B5D /* PKTokenizer.h in Headers */,
 				6FD268F527ED52C500C37B5D /* NSString+PEGKitAdditions.h in Headers */,
 				6FD268D027ED2A4B00C37B5D /* TDTemplateContext.h in Headers */,
+				6FD2691027ED78F800C37B5D /* PKTokenizerState.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +424,7 @@
 				6FD268D527ED2B3F00C37B5D /* TDWriter.m in Sources */,
 				6FD268F627ED52C500C37B5D /* NSString+PEGKitAdditions.m in Sources */,
 				6FD268DD27ED47F700C37B5D /* TDTag.m in Sources */,
+				6FD2691127ED78F800C37B5D /* PKTokenizerState.m in Sources */,
 				6FD2690D27ED77ED00C37B5D /* PKTokenizer.m in Sources */,
 				6FD268E727ED48CE00C37B5D /* PKAST.m in Sources */,
 				6FD2690527ED764100C37B5D /* XPParser.m in Sources */,
