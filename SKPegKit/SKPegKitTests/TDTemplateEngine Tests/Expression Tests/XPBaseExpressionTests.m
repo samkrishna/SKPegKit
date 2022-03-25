@@ -29,5 +29,13 @@
 
     PKToken *tok = nil;
     PKToken *eof = [PKToken EOFToken];
+
+    NSMutableArray *toks = [NSMutableArray array];
+
+    while (eof != (tok = [t nextToken])) {
+        [toks addObject:tok];
+    }
+
+    return [toks copy];
 }
 @end

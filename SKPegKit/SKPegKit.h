@@ -13,6 +13,7 @@
 #import <SKPegKit/PKToken.h>
 #import <SKPegKit/PKTokenizer.h>
 #import <SKPegKit/PKTokenizerState.h>
+#import <SKPegKit/PKReader.h>
 
 #import <SKPegKit/TDTemplateEngine.h>
 #import <SKPegKit/TDTemplateContext.h>
