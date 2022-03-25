@@ -6,6 +6,7 @@
 //
 
 #import "TDTemplateEngine.h"
+#import "TDTemplateContext.h"
 
 NSString *const TDTemplateEngineTagEndPrefix = @"/";
 NSString *const TDTemplateEngineErrorDomain = @"TDTemplateEngineErrorDomain";
@@ -33,7 +34,7 @@ const NSInteger TDTemplateEngineRenderingErrorCode = 1;
     self.printEndDelimiter = @"}}";
     self.tagStartDelimiter = @"{%";
     self.tagEndDelimiter = @"%}";
-    self.staticContext = [[TDTemplateContext alloc] init]
+    self.staticContext = [[TDTemplateContext alloc] init];
 
     return self;
 }
