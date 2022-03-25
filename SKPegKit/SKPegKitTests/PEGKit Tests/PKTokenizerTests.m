@@ -5,20 +5,25 @@
 //  Created by Sam Krishna on 3/25/22.
 //
 
-#import <XCTest/XCTest.h>
+#import "TDTestScaffold.h"
 
-@interface PKTokenizerTests : XCTestCase
+@interface PKTokenizerTests : XCTestCase {
+    PKTokenizer *t;
+    NSString *s;
+}
 
 @end
 
 @implementation PKTokenizerTests
 
-- (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
+- (void)testPythonImports {
+    s =
+    @"from Quartz.CoreGraphics import *\n"
+    @"from Quartz.ImageIO import *\n"
+    @"from Foundation import *\n";
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    t = [PKTokenizer tokenizerWithString:s];
+    TDNotNil(t);
 }
 
 - (void)testExample {
