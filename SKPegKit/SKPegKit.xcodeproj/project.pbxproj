@@ -17,15 +17,17 @@
 		6FD268D427ED2B3F00C37B5D /* TDWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268D227ED2B3F00C37B5D /* TDWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268D527ED2B3F00C37B5D /* TDWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268D327ED2B3F00C37B5D /* TDWriter.m */; };
 		6FD268D827ED420400C37B5D /* SKPegKit-Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268D727ED3FCD00C37B5D /* SKPegKit-Prefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FD268DC27ED47F700C37B5D /* TDTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268DA27ED47F700C37B5D /* TDTag.h */; };
+		6FD268DC27ED47F700C37B5D /* TDTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268DA27ED47F700C37B5D /* TDTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268DD27ED47F700C37B5D /* TDTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268DB27ED47F700C37B5D /* TDTag.m */; };
-		6FD268E127ED482700C37B5D /* TDNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268DF27ED482700C37B5D /* TDNode.h */; };
+		6FD268E127ED482700C37B5D /* TDNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268DF27ED482700C37B5D /* TDNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268E227ED482700C37B5D /* TDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268E027ED482700C37B5D /* TDNode.m */; };
-		6FD268E627ED48CE00C37B5D /* PKAST.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268E427ED48CE00C37B5D /* PKAST.h */; };
+		6FD268E627ED48CE00C37B5D /* PKAST.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268E427ED48CE00C37B5D /* PKAST.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268E727ED48CE00C37B5D /* PKAST.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268E527ED48CE00C37B5D /* PKAST.m */; };
-		6FD268ED27ED4B7300C37B5D /* PKTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268EC27ED4B7300C37B5D /* PKTypes.h */; };
-		6FD268F027ED4BB300C37B5D /* PKToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268EE27ED4BB300C37B5D /* PKToken.h */; };
+		6FD268ED27ED4B7300C37B5D /* PKTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268EC27ED4B7300C37B5D /* PKTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD268F027ED4BB300C37B5D /* PKToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268EE27ED4BB300C37B5D /* PKToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268F127ED4BB300C37B5D /* PKToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268EF27ED4BB300C37B5D /* PKToken.m */; };
+		6FD268F527ED52C500C37B5D /* NSString+PEGKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268F327ED52C500C37B5D /* NSString+PEGKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD268F627ED52C500C37B5D /* NSString+PEGKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268F427ED52C500C37B5D /* NSString+PEGKitAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		6FD268EC27ED4B7300C37B5D /* PKTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKTypes.h; sourceTree = "<group>"; };
 		6FD268EE27ED4BB300C37B5D /* PKToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKToken.h; sourceTree = "<group>"; };
 		6FD268EF27ED4BB300C37B5D /* PKToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKToken.m; sourceTree = "<group>"; };
+		6FD268F327ED52C500C37B5D /* NSString+PEGKitAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PEGKitAdditions.h"; sourceTree = "<group>"; };
+		6FD268F427ED52C500C37B5D /* NSString+PEGKitAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PEGKitAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		6FD268AD27ECBB4600C37B5D /* PegKit */ = {
 			isa = PBXGroup;
 			children = (
+				6FD268F227ED52AB00C37B5D /* categories */,
 				6FD268E827ED4B3000C37B5D /* tokenize */,
 				6FD268E327ED48BE00C37B5D /* ast */,
 			);
@@ -214,6 +219,15 @@
 			path = states;
 			sourceTree = "<group>";
 		};
+		6FD268F227ED52AB00C37B5D /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				6FD268F327ED52C500C37B5D /* NSString+PEGKitAdditions.h */,
+				6FD268F427ED52C500C37B5D /* NSString+PEGKitAdditions.m */,
+			);
+			path = categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -230,6 +244,7 @@
 				6FD268D827ED420400C37B5D /* SKPegKit-Prefix.h in Headers */,
 				6FD268DC27ED47F700C37B5D /* TDTag.h in Headers */,
 				6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */,
+				6FD268F527ED52C500C37B5D /* NSString+PEGKitAdditions.h in Headers */,
 				6FD268D027ED2A4B00C37B5D /* TDTemplateContext.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +349,7 @@
 				6FD268CC27ECBD2F00C37B5D /* TDTemplateEngine.m in Sources */,
 				6FD268F127ED4BB300C37B5D /* PKToken.m in Sources */,
 				6FD268D527ED2B3F00C37B5D /* TDWriter.m in Sources */,
+				6FD268F627ED52C500C37B5D /* NSString+PEGKitAdditions.m in Sources */,
 				6FD268DD27ED47F700C37B5D /* TDTag.m in Sources */,
 				6FD268E727ED48CE00C37B5D /* PKAST.m in Sources */,
 				6FD268D127ED2A4B00C37B5D /* TDTemplateContext.m in Sources */,
