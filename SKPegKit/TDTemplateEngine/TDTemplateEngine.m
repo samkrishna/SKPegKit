@@ -36,6 +36,13 @@ const NSInteger TDTemplateEngineRenderingErrorCode = 1;
     self.tagEndDelimiter = @"%}";
     self.staticContext = [[TDTemplateContext alloc] init];
 
+    NSError *err;
+    self.cleanerRegex = [NSRegularExpression regularExpressionWithPattern:@"([{}\\[\\]\\(\\).+?*])" options:NSRegularExpressionAnchorsMatchLines error:&err];
+    TDAssert(!err);
+    TDAssert(self.cleanerRegex);
+
+    self.tagTab = [NSMutableDictionary dictionary];
+
     return self;
 }
 
