@@ -43,6 +43,33 @@
 		6FD2691627EE05E000C37B5D /* PKReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2691427EE05E000C37B5D /* PKReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD2691727EE05E000C37B5D /* PKReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2691527EE05E000C37B5D /* PKReader.m */; };
 		6FD2691A27EE121400C37B5D /* PKReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2691927EE121400C37B5D /* PKReaderTests.m */; };
+		6FD2691C27EE199000C37B5D /* PKTokenizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2691B27EE199000C37B5D /* PKTokenizerTests.m */; };
+		6FD2691F27EE1C5B00C37B5D /* PKNumberState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2691D27EE1C5B00C37B5D /* PKNumberState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2692027EE1C5B00C37B5D /* PKNumberState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2691E27EE1C5B00C37B5D /* PKNumberState.m */; };
+		6FD2692327EE1D4200C37B5D /* PKQuoteState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2692127EE1D4200C37B5D /* PKQuoteState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2692427EE1D4200C37B5D /* PKQuoteState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2692227EE1D4200C37B5D /* PKQuoteState.m */; };
+		6FD2692727EE1D4B00C37B5D /* PKSymbolState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2692527EE1D4B00C37B5D /* PKSymbolState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2692827EE1D4B00C37B5D /* PKSymbolState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2692627EE1D4B00C37B5D /* PKSymbolState.m */; };
+		6FD2692B27EE1D5200C37B5D /* PKWordState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2692927EE1D5200C37B5D /* PKWordState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2692C27EE1D5200C37B5D /* PKWordState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2692A27EE1D5200C37B5D /* PKWordState.m */; };
+		6FD2692F27EE1D5A00C37B5D /* PKWhitespaceState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2692D27EE1D5A00C37B5D /* PKWhitespaceState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2693027EE1D5A00C37B5D /* PKWhitespaceState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2692E27EE1D5A00C37B5D /* PKWhitespaceState.m */; };
+		6FD2693327EE1D6200C37B5D /* PKDelimitState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2693127EE1D6200C37B5D /* PKDelimitState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2693427EE1D6200C37B5D /* PKDelimitState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2693227EE1D6200C37B5D /* PKDelimitState.m */; };
+		6FD2693727EE1D7900C37B5D /* PKCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2693527EE1D7900C37B5D /* PKCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2693827EE1D7900C37B5D /* PKCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2693627EE1D7900C37B5D /* PKCommentState.m */; };
+		6FD2693B27EE1D8800C37B5D /* PKSingleLineCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2693927EE1D8800C37B5D /* PKSingleLineCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2693C27EE1D8800C37B5D /* PKSingleLineCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2693A27EE1D8800C37B5D /* PKSingleLineCommentState.m */; };
+		6FD2693F27EE1D9700C37B5D /* PKMultiLineCommentState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2693D27EE1D9700C37B5D /* PKMultiLineCommentState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2694027EE1D9700C37B5D /* PKMultiLineCommentState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2693E27EE1D9700C37B5D /* PKMultiLineCommentState.m */; };
+		6FD2694327EE1DA200C37B5D /* PKEmailState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2694127EE1DA200C37B5D /* PKEmailState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2694427EE1DA200C37B5D /* PKEmailState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2694227EE1DA200C37B5D /* PKEmailState.m */; };
+		6FD2694727EE1DA900C37B5D /* PKURLState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2694527EE1DA900C37B5D /* PKURLState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2694827EE1DA900C37B5D /* PKURLState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2694627EE1DA900C37B5D /* PKURLState.m */; };
+		6FD2694B27EE1DB300C37B5D /* PKTwitterState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2694927EE1DB300C37B5D /* PKTwitterState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2694C27EE1DB300C37B5D /* PKTwitterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2694A27EE1DB300C37B5D /* PKTwitterState.m */; };
+		6FD2694F27EE1DBC00C37B5D /* PKHashtagState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2694D27EE1DBC00C37B5D /* PKHashtagState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2695027EE1DBC00C37B5D /* PKHashtagState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2694E27EE1DBC00C37B5D /* PKHashtagState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +124,33 @@
 		6FD2691427EE05E000C37B5D /* PKReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKReader.h; sourceTree = "<group>"; };
 		6FD2691527EE05E000C37B5D /* PKReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKReader.m; sourceTree = "<group>"; };
 		6FD2691927EE121400C37B5D /* PKReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKReaderTests.m; sourceTree = "<group>"; };
+		6FD2691B27EE199000C37B5D /* PKTokenizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTokenizerTests.m; sourceTree = "<group>"; };
+		6FD2691D27EE1C5B00C37B5D /* PKNumberState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKNumberState.h; sourceTree = "<group>"; };
+		6FD2691E27EE1C5B00C37B5D /* PKNumberState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKNumberState.m; sourceTree = "<group>"; };
+		6FD2692127EE1D4200C37B5D /* PKQuoteState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKQuoteState.h; sourceTree = "<group>"; };
+		6FD2692227EE1D4200C37B5D /* PKQuoteState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKQuoteState.m; sourceTree = "<group>"; };
+		6FD2692527EE1D4B00C37B5D /* PKSymbolState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKSymbolState.h; sourceTree = "<group>"; };
+		6FD2692627EE1D4B00C37B5D /* PKSymbolState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSymbolState.m; sourceTree = "<group>"; };
+		6FD2692927EE1D5200C37B5D /* PKWordState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKWordState.h; sourceTree = "<group>"; };
+		6FD2692A27EE1D5200C37B5D /* PKWordState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKWordState.m; sourceTree = "<group>"; };
+		6FD2692D27EE1D5A00C37B5D /* PKWhitespaceState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKWhitespaceState.h; sourceTree = "<group>"; };
+		6FD2692E27EE1D5A00C37B5D /* PKWhitespaceState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKWhitespaceState.m; sourceTree = "<group>"; };
+		6FD2693127EE1D6200C37B5D /* PKDelimitState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKDelimitState.h; sourceTree = "<group>"; };
+		6FD2693227EE1D6200C37B5D /* PKDelimitState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKDelimitState.m; sourceTree = "<group>"; };
+		6FD2693527EE1D7900C37B5D /* PKCommentState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCommentState.h; sourceTree = "<group>"; };
+		6FD2693627EE1D7900C37B5D /* PKCommentState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCommentState.m; sourceTree = "<group>"; };
+		6FD2693927EE1D8800C37B5D /* PKSingleLineCommentState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKSingleLineCommentState.h; sourceTree = "<group>"; };
+		6FD2693A27EE1D8800C37B5D /* PKSingleLineCommentState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSingleLineCommentState.m; sourceTree = "<group>"; };
+		6FD2693D27EE1D9700C37B5D /* PKMultiLineCommentState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKMultiLineCommentState.h; sourceTree = "<group>"; };
+		6FD2693E27EE1D9700C37B5D /* PKMultiLineCommentState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKMultiLineCommentState.m; sourceTree = "<group>"; };
+		6FD2694127EE1DA200C37B5D /* PKEmailState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKEmailState.h; sourceTree = "<group>"; };
+		6FD2694227EE1DA200C37B5D /* PKEmailState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKEmailState.m; sourceTree = "<group>"; };
+		6FD2694527EE1DA900C37B5D /* PKURLState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKURLState.h; sourceTree = "<group>"; };
+		6FD2694627EE1DA900C37B5D /* PKURLState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKURLState.m; sourceTree = "<group>"; };
+		6FD2694927EE1DB300C37B5D /* PKTwitterState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKTwitterState.h; sourceTree = "<group>"; };
+		6FD2694A27EE1DB300C37B5D /* PKTwitterState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTwitterState.m; sourceTree = "<group>"; };
+		6FD2694D27EE1DBC00C37B5D /* PKHashtagState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKHashtagState.h; sourceTree = "<group>"; };
+		6FD2694E27EE1DBC00C37B5D /* PKHashtagState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKHashtagState.m; sourceTree = "<group>"; };
 		C6A390F2019F44A18CB49379 /* Pods-SKPegKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKPegKitTests.debug.xcconfig"; path = "Target Support Files/Pods-SKPegKitTests/Pods-SKPegKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -282,6 +336,32 @@
 		6FD268EB27ED4B3F00C37B5D /* states */ = {
 			isa = PBXGroup;
 			children = (
+				6FD2691D27EE1C5B00C37B5D /* PKNumberState.h */,
+				6FD2691E27EE1C5B00C37B5D /* PKNumberState.m */,
+				6FD2692127EE1D4200C37B5D /* PKQuoteState.h */,
+				6FD2692227EE1D4200C37B5D /* PKQuoteState.m */,
+				6FD2692527EE1D4B00C37B5D /* PKSymbolState.h */,
+				6FD2692627EE1D4B00C37B5D /* PKSymbolState.m */,
+				6FD2692927EE1D5200C37B5D /* PKWordState.h */,
+				6FD2692A27EE1D5200C37B5D /* PKWordState.m */,
+				6FD2692D27EE1D5A00C37B5D /* PKWhitespaceState.h */,
+				6FD2692E27EE1D5A00C37B5D /* PKWhitespaceState.m */,
+				6FD2693127EE1D6200C37B5D /* PKDelimitState.h */,
+				6FD2693227EE1D6200C37B5D /* PKDelimitState.m */,
+				6FD2693527EE1D7900C37B5D /* PKCommentState.h */,
+				6FD2693627EE1D7900C37B5D /* PKCommentState.m */,
+				6FD2693927EE1D8800C37B5D /* PKSingleLineCommentState.h */,
+				6FD2693A27EE1D8800C37B5D /* PKSingleLineCommentState.m */,
+				6FD2693D27EE1D9700C37B5D /* PKMultiLineCommentState.h */,
+				6FD2693E27EE1D9700C37B5D /* PKMultiLineCommentState.m */,
+				6FD2694127EE1DA200C37B5D /* PKEmailState.h */,
+				6FD2694227EE1DA200C37B5D /* PKEmailState.m */,
+				6FD2694527EE1DA900C37B5D /* PKURLState.h */,
+				6FD2694627EE1DA900C37B5D /* PKURLState.m */,
+				6FD2694927EE1DB300C37B5D /* PKTwitterState.h */,
+				6FD2694A27EE1DB300C37B5D /* PKTwitterState.m */,
+				6FD2694D27EE1DBC00C37B5D /* PKHashtagState.h */,
+				6FD2694E27EE1DBC00C37B5D /* PKHashtagState.m */,
 			);
 			path = states;
 			sourceTree = "<group>";
@@ -332,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				6FD2691927EE121400C37B5D /* PKReaderTests.m */,
+				6FD2691B27EE199000C37B5D /* PKTokenizerTests.m */,
 			);
 			path = "PEGKit Tests";
 			sourceTree = "<group>";
@@ -346,17 +427,30 @@
 				6FD268FE27ED5F6100C37B5D /* XPExpression.h in Headers */,
 				6FD268E627ED48CE00C37B5D /* PKAST.h in Headers */,
 				6FD268ED27ED4B7300C37B5D /* PKTypes.h in Headers */,
+				6FD2694B27EE1DB300C37B5D /* PKTwitterState.h in Headers */,
 				6FD268E127ED482700C37B5D /* TDNode.h in Headers */,
 				6FD2690427ED764100C37B5D /* XPParser.h in Headers */,
+				6FD2693727EE1D7900C37B5D /* PKCommentState.h in Headers */,
 				6FD268F027ED4BB300C37B5D /* PKToken.h in Headers */,
 				6FD2690827ED76F300C37B5D /* PKParser.h in Headers */,
+				6FD2692327EE1D4200C37B5D /* PKQuoteState.h in Headers */,
 				6FD268CB27ECBD2F00C37B5D /* TDTemplateEngine.h in Headers */,
+				6FD2694327EE1DA200C37B5D /* PKEmailState.h in Headers */,
 				6FD268D427ED2B3F00C37B5D /* TDWriter.h in Headers */,
 				6FD268D827ED420400C37B5D /* SKPegKit-Prefix.h in Headers */,
+				6FD2694727EE1DA900C37B5D /* PKURLState.h in Headers */,
+				6FD2693B27EE1D8800C37B5D /* PKSingleLineCommentState.h in Headers */,
+				6FD2694F27EE1DBC00C37B5D /* PKHashtagState.h in Headers */,
 				6FD2691627EE05E000C37B5D /* PKReader.h in Headers */,
 				6FD268DC27ED47F700C37B5D /* TDTag.h in Headers */,
+				6FD2693F27EE1D9700C37B5D /* PKMultiLineCommentState.h in Headers */,
+				6FD2693327EE1D6200C37B5D /* PKDelimitState.h in Headers */,
+				6FD2691F27EE1C5B00C37B5D /* PKNumberState.h in Headers */,
 				6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */,
+				6FD2692B27EE1D5200C37B5D /* PKWordState.h in Headers */,
+				6FD2692727EE1D4B00C37B5D /* PKSymbolState.h in Headers */,
 				6FD2690C27ED77ED00C37B5D /* PKTokenizer.h in Headers */,
+				6FD2692F27EE1D5A00C37B5D /* PKWhitespaceState.h in Headers */,
 				6FD268F527ED52C500C37B5D /* NSString+PEGKitAdditions.h in Headers */,
 				6FD268D027ED2A4B00C37B5D /* TDTemplateContext.h in Headers */,
 				6FD2691027ED78F800C37B5D /* PKTokenizerState.h in Headers */,
@@ -486,17 +580,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD2692827EE1D4B00C37B5D /* PKSymbolState.m in Sources */,
 				6FD2690927ED76F300C37B5D /* PKParser.m in Sources */,
 				6FD268CC27ECBD2F00C37B5D /* TDTemplateEngine.m in Sources */,
 				6FD268F127ED4BB300C37B5D /* PKToken.m in Sources */,
+				6FD2692427EE1D4200C37B5D /* PKQuoteState.m in Sources */,
+				6FD2695027EE1DBC00C37B5D /* PKHashtagState.m in Sources */,
+				6FD2694427EE1DA200C37B5D /* PKEmailState.m in Sources */,
+				6FD2693027EE1D5A00C37B5D /* PKWhitespaceState.m in Sources */,
+				6FD2693C27EE1D8800C37B5D /* PKSingleLineCommentState.m in Sources */,
+				6FD2693827EE1D7900C37B5D /* PKCommentState.m in Sources */,
 				6FD268D527ED2B3F00C37B5D /* TDWriter.m in Sources */,
+				6FD2693427EE1D6200C37B5D /* PKDelimitState.m in Sources */,
+				6FD2692C27EE1D5200C37B5D /* PKWordState.m in Sources */,
 				6FD268F627ED52C500C37B5D /* NSString+PEGKitAdditions.m in Sources */,
+				6FD2694027EE1D9700C37B5D /* PKMultiLineCommentState.m in Sources */,
 				6FD268DD27ED47F700C37B5D /* TDTag.m in Sources */,
 				6FD2691127ED78F800C37B5D /* PKTokenizerState.m in Sources */,
+				6FD2694827EE1DA900C37B5D /* PKURLState.m in Sources */,
 				6FD2690D27ED77ED00C37B5D /* PKTokenizer.m in Sources */,
 				6FD268E727ED48CE00C37B5D /* PKAST.m in Sources */,
+				6FD2692027EE1C5B00C37B5D /* PKNumberState.m in Sources */,
 				6FD2691727EE05E000C37B5D /* PKReader.m in Sources */,
 				6FD2690527ED764100C37B5D /* XPParser.m in Sources */,
+				6FD2694C27EE1DB300C37B5D /* PKTwitterState.m in Sources */,
 				6FD268D127ED2A4B00C37B5D /* TDTemplateContext.m in Sources */,
 				6FD268FF27ED5F6100C37B5D /* XPExpression.m in Sources */,
 				6FD268E227ED482700C37B5D /* TDNode.m in Sources */,
@@ -509,6 +616,7 @@
 			files = (
 				6FD2691327EE055900C37B5D /* TDTestScaffold.m in Sources */,
 				6FD268F827ED5CFC00C37B5D /* XPBaseExpressionTests.m in Sources */,
+				6FD2691C27EE199000C37B5D /* PKTokenizerTests.m in Sources */,
 				6FD2691A27EE121400C37B5D /* PKReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

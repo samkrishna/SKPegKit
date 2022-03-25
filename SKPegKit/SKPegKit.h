@@ -15,6 +15,19 @@
 #import <SKPegKit/PKTokenizerState.h>
 #import <SKPegKit/PKReader.h>
 
+#import <SKPegKit/PKNumberState.h>
+#import <SKPegKit/PKQuoteState.h>
+#import <SKPegKit/PKSymbolState.h>
+#import <SKPegKit/PKWordState.h>
+#import <SKPegKit/PKWhitespaceState.h>
+#import <SKPegKit/PKDelimitState.h>
+#import <SKPegKit/PKCommentState.h>
+#import <SKPegKit/PKEmailState.h>
+#import <SKPegKit/PKURLState.h>
+#import <SKPegKit/PKTwitterState.h>
+#import <SKPegKit/PKHashtagState.h>
+
+
 #import <SKPegKit/TDTemplateEngine.h>
 #import <SKPegKit/TDTemplateContext.h>
 
