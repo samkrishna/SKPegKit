@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0873BF24748100E794AE8958 /* libPods-SKPegKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC20404B808DF1FE5233155 /* libPods-SKPegKitTests.a */; };
 		6FD268B627ECBB4600C37B5D /* SKPegKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */; };
 		6FD268BB27ECBB4600C37B5D /* SKPegKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268BA27ECBB4600C37B5D /* SKPegKitTests.m */; };
 		6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268AE27ECBB4600C37B5D /* SKPegKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +40,9 @@
 		6FD2690D27ED77ED00C37B5D /* PKTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690B27ED77ED00C37B5D /* PKTokenizer.m */; };
 		6FD2691027ED78F800C37B5D /* PKTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2690E27ED78F800C37B5D /* PKTokenizerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD2691127ED78F800C37B5D /* PKTokenizerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690F27ED78F800C37B5D /* PKTokenizerState.m */; };
+		6FD2691327EE055900C37B5D /* TDTestScaffold.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2691227EE055900C37B5D /* TDTestScaffold.m */; };
+		6FD2691627EE05E000C37B5D /* PKReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2691427EE05E000C37B5D /* PKReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2691727EE05E000C37B5D /* PKReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2691527EE05E000C37B5D /* PKReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		095864D4B4828E0FD66070F6 /* Pods-SKPegKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKPegKitTests.release.xcconfig"; path = "Target Support Files/Pods-SKPegKitTests/Pods-SKPegKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CC20404B808DF1FE5233155 /* libPods-SKPegKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SKPegKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKPegKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD268AE27ECBB4600C37B5D /* SKPegKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPegKit.h; sourceTree = "<group>"; };
 		6FD268B527ECBB4600C37B5D /* SKPegKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKPegKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +94,10 @@
 		6FD2690B27ED77ED00C37B5D /* PKTokenizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTokenizer.m; sourceTree = "<group>"; };
 		6FD2690E27ED78F800C37B5D /* PKTokenizerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKTokenizerState.h; sourceTree = "<group>"; };
 		6FD2690F27ED78F800C37B5D /* PKTokenizerState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTokenizerState.m; sourceTree = "<group>"; };
+		6FD2691227EE055900C37B5D /* TDTestScaffold.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTestScaffold.m; sourceTree = "<group>"; };
+		6FD2691427EE05E000C37B5D /* PKReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKReader.h; sourceTree = "<group>"; };
+		6FD2691527EE05E000C37B5D /* PKReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKReader.m; sourceTree = "<group>"; };
+		C6A390F2019F44A18CB49379 /* Pods-SKPegKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKPegKitTests.debug.xcconfig"; path = "Target Support Files/Pods-SKPegKitTests/Pods-SKPegKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +113,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FD268B627ECBB4600C37B5D /* SKPegKit.framework in Frameworks */,
+				0873BF24748100E794AE8958 /* libPods-SKPegKitTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AD1E79F9A86482D465DF042 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6A390F2019F44A18CB49379 /* Pods-SKPegKitTests.debug.xcconfig */,
+				095864D4B4828E0FD66070F6 /* Pods-SKPegKitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50BF852C3DA16363EF400D32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CC20404B808DF1FE5233155 /* libPods-SKPegKitTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6FD268A127ECBB4600C37B5D = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +147,8 @@
 				6FD268C827ECBCF900C37B5D /* TDTemplateEngine */,
 				6FD268B927ECBB4600C37B5D /* SKPegKitTests */,
 				6FD268AC27ECBB4600C37B5D /* Products */,
+				3AD1E79F9A86482D465DF042 /* Pods */,
+				50BF852C3DA16363EF400D32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				6FD268C527ECBB8B00C37B5D /* TDTestScaffold.h */,
+				6FD2691227EE055900C37B5D /* TDTestScaffold.m */,
 				6FD268C727ECBC1F00C37B5D /* Expression Tests */,
 			);
 			path = "TDTemplateEngine Tests";
@@ -229,6 +260,8 @@
 		6FD268E927ED4B3700C37B5D /* io */ = {
 			isa = PBXGroup;
 			children = (
+				6FD2691427EE05E000C37B5D /* PKReader.h */,
+				6FD2691527EE05E000C37B5D /* PKReader.m */,
 			);
 			path = io;
 			sourceTree = "<group>";
@@ -312,6 +345,7 @@
 				6FD268CB27ECBD2F00C37B5D /* TDTemplateEngine.h in Headers */,
 				6FD268D427ED2B3F00C37B5D /* TDWriter.h in Headers */,
 				6FD268D827ED420400C37B5D /* SKPegKit-Prefix.h in Headers */,
+				6FD2691627EE05E000C37B5D /* PKReader.h in Headers */,
 				6FD268DC27ED47F700C37B5D /* TDTag.h in Headers */,
 				6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */,
 				6FD2690C27ED77ED00C37B5D /* PKTokenizer.h in Headers */,
@@ -346,6 +380,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FD268C227ECBB4600C37B5D /* Build configuration list for PBXNativeTarget "SKPegKitTests" */;
 			buildPhases = (
+				37292FF4C9903C74DBBE6D9A /* [CP] Check Pods Manifest.lock */,
 				6FD268B127ECBB4600C37B5D /* Sources */,
 				6FD268B227ECBB4600C37B5D /* Frameworks */,
 				6FD268B327ECBB4600C37B5D /* Resources */,
@@ -413,6 +448,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37292FF4C9903C74DBBE6D9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SKPegKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6FD268A727ECBB4600C37B5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -427,6 +487,7 @@
 				6FD2691127ED78F800C37B5D /* PKTokenizerState.m in Sources */,
 				6FD2690D27ED77ED00C37B5D /* PKTokenizer.m in Sources */,
 				6FD268E727ED48CE00C37B5D /* PKAST.m in Sources */,
+				6FD2691727EE05E000C37B5D /* PKReader.m in Sources */,
 				6FD2690527ED764100C37B5D /* XPParser.m in Sources */,
 				6FD268D127ED2A4B00C37B5D /* TDTemplateContext.m in Sources */,
 				6FD268FF27ED5F6100C37B5D /* XPExpression.m in Sources */,
@@ -438,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD2691327EE055900C37B5D /* TDTestScaffold.m in Sources */,
 				6FD268F827ED5CFC00C37B5D /* XPBaseExpressionTests.m in Sources */,
 				6FD268BB27ECBB4600C37B5D /* SKPegKitTests.m in Sources */,
 			);
@@ -639,6 +701,7 @@
 		};
 		6FD268C327ECBB4600C37B5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A390F2019F44A18CB49379 /* Pods-SKPegKitTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -653,6 +716,7 @@
 		};
 		6FD268C427ECBB4600C37B5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 095864D4B4828E0FD66070F6 /* Pods-SKPegKitTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

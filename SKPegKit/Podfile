@@ -1,0 +1,4 @@
+platform :macos, '11.6'
+target 'SKPegKitTests' do
+  pod 'OCMock', '~> 3.9.1'
+end
