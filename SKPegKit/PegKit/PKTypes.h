@@ -10,5 +10,6 @@
 
 // a UTF-16 code unit. signed so that it may include -1 (EOF) as well
 typedef int32_t PKUniChar;
+#define PKEOF (PKUniChar)-1
 
 #endif /* PKTypes_h */
