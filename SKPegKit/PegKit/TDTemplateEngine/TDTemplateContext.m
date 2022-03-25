@@ -25,7 +25,7 @@
 
     self.vars = [NSMutableDictionary dictionary];
     [self.vars addEntriesFromDictionary:vars];
-    // self.writer = [TDWriter writeWithOutputStream:output];
+    self.writer = [TDWriter writerWithOutputStream:output];
 
     return self;
 }
@@ -36,12 +36,26 @@
 
 - (id)resolveVariable:(NSString *)name {
     NSParameterAssert(name.length);
-    TDAssert(_vars);
-    return nil;
+    TDAssert(self.vars);
+    id result = self.vars[name];
+
+    if (!result && self.enclosingScope) {
+        result = [self.enclosingScope resolveVariable:name];
+    }
+
+    return result;
 }
 
 - (void)defineVariable:(NSString *)name value:(id)value {
-    
+    NSParameterAssert(name.length);
+    TDAssert(self.vars);
+
+    if (value) {
+        self.vars[name] = value;
+    }
+    else {
+        self.vars[name] = nil;
+    }
 }
 
 @end
