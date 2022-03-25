@@ -16,6 +16,10 @@
 @import Foundation;
 @import XCTest;
 
+#import "TDTemplateEngine.h"
+#import "TDTemplateContext.h"
+#import "PKTokenizer.h"
+
 #ifndef TDTestScaffold_h
 #define TDTestScaffold_h
 

@@ -28,6 +28,15 @@
 		6FD268F127ED4BB300C37B5D /* PKToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268EF27ED4BB300C37B5D /* PKToken.m */; };
 		6FD268F527ED52C500C37B5D /* NSString+PEGKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268F327ED52C500C37B5D /* NSString+PEGKitAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268F627ED52C500C37B5D /* NSString+PEGKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268F427ED52C500C37B5D /* NSString+PEGKitAdditions.m */; };
+		6FD268F827ED5CFC00C37B5D /* XPBaseExpressionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268F727ED5CFC00C37B5D /* XPBaseExpressionTests.m */; };
+		6FD268FE27ED5F6100C37B5D /* XPExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268FC27ED5F6100C37B5D /* XPExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD268FF27ED5F6100C37B5D /* XPExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268FD27ED5F6100C37B5D /* XPExpression.m */; };
+		6FD2690427ED764100C37B5D /* XPParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2690227ED764100C37B5D /* XPParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2690527ED764100C37B5D /* XPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690327ED764100C37B5D /* XPParser.m */; };
+		6FD2690827ED76F300C37B5D /* PKParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2690627ED76F300C37B5D /* PKParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2690927ED76F300C37B5D /* PKParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690727ED76F300C37B5D /* PKParser.m */; };
+		6FD2690C27ED77ED00C37B5D /* PKTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2690A27ED77ED00C37B5D /* PKTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD2690D27ED77ED00C37B5D /* PKTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690B27ED77ED00C37B5D /* PKTokenizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +74,16 @@
 		6FD268EF27ED4BB300C37B5D /* PKToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKToken.m; sourceTree = "<group>"; };
 		6FD268F327ED52C500C37B5D /* NSString+PEGKitAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PEGKitAdditions.h"; sourceTree = "<group>"; };
 		6FD268F427ED52C500C37B5D /* NSString+PEGKitAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PEGKitAdditions.m"; sourceTree = "<group>"; };
+		6FD268F727ED5CFC00C37B5D /* XPBaseExpressionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPBaseExpressionTests.m; sourceTree = "<group>"; };
+		6FD268F927ED5D4B00C37B5D /* XPBaseExpressionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPBaseExpressionTests.h; sourceTree = "<group>"; };
+		6FD268FC27ED5F6100C37B5D /* XPExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPExpression.h; sourceTree = "<group>"; };
+		6FD268FD27ED5F6100C37B5D /* XPExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPExpression.m; sourceTree = "<group>"; };
+		6FD2690227ED764100C37B5D /* XPParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPParser.h; sourceTree = "<group>"; };
+		6FD2690327ED764100C37B5D /* XPParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPParser.m; sourceTree = "<group>"; };
+		6FD2690627ED76F300C37B5D /* PKParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKParser.h; sourceTree = "<group>"; };
+		6FD2690727ED76F300C37B5D /* PKParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKParser.m; sourceTree = "<group>"; };
+		6FD2690A27ED77ED00C37B5D /* PKTokenizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKTokenizer.h; sourceTree = "<group>"; };
+		6FD2690B27ED77ED00C37B5D /* PKTokenizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTokenizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +130,9 @@
 		6FD268AD27ECBB4600C37B5D /* PegKit */ = {
 			isa = PBXGroup;
 			children = (
+				6FD268EC27ED4B7300C37B5D /* PKTypes.h */,
+				6FD2690627ED76F300C37B5D /* PKParser.h */,
+				6FD2690727ED76F300C37B5D /* PKParser.m */,
 				6FD268F227ED52AB00C37B5D /* categories */,
 				6FD268E827ED4B3000C37B5D /* tokenize */,
 				6FD268E327ED48BE00C37B5D /* ast */,
@@ -139,6 +161,8 @@
 		6FD268C727ECBC1F00C37B5D /* Expression Tests */ = {
 			isa = PBXGroup;
 			children = (
+				6FD268F927ED5D4B00C37B5D /* XPBaseExpressionTests.h */,
+				6FD268F727ED5CFC00C37B5D /* XPBaseExpressionTests.m */,
 			);
 			path = "Expression Tests";
 			sourceTree = "<group>";
@@ -152,8 +176,11 @@
 				6FD268CF27ED2A4B00C37B5D /* TDTemplateContext.m */,
 				6FD268D227ED2B3F00C37B5D /* TDWriter.h */,
 				6FD268D327ED2B3F00C37B5D /* TDWriter.m */,
+				6FD2690027ED73C700C37B5D /* Parser */,
 				6FD268DE27ED47FD00C37B5D /* Nodes */,
 				6FD268D927ED47D000C37B5D /* Tags */,
+				6FD268FA27ED5E4A00C37B5D /* Filter */,
+				6FD268FB27ED5E4F00C37B5D /* Expression */,
 			);
 			path = TDTemplateEngine;
 			sourceTree = "<group>";
@@ -188,7 +215,6 @@
 		6FD268E827ED4B3000C37B5D /* tokenize */ = {
 			isa = PBXGroup;
 			children = (
-				6FD268EC27ED4B7300C37B5D /* PKTypes.h */,
 				6FD268E927ED4B3700C37B5D /* io */,
 				6FD268EA27ED4B3A00C37B5D /* tokenize */,
 				6FD268EB27ED4B3F00C37B5D /* states */,
@@ -208,6 +234,8 @@
 			children = (
 				6FD268EE27ED4BB300C37B5D /* PKToken.h */,
 				6FD268EF27ED4BB300C37B5D /* PKToken.m */,
+				6FD2690A27ED77ED00C37B5D /* PKTokenizer.h */,
+				6FD2690B27ED77ED00C37B5D /* PKTokenizer.m */,
 			);
 			path = tokenize;
 			sourceTree = "<group>";
@@ -228,6 +256,39 @@
 			path = categories;
 			sourceTree = "<group>";
 		};
+		6FD268FA27ED5E4A00C37B5D /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		6FD268FB27ED5E4F00C37B5D /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				6FD2690127ED762600C37B5D /* Parser */,
+				6FD268FC27ED5F6100C37B5D /* XPExpression.h */,
+				6FD268FD27ED5F6100C37B5D /* XPExpression.m */,
+			);
+			path = Expression;
+			sourceTree = "<group>";
+		};
+		6FD2690027ED73C700C37B5D /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		6FD2690127ED762600C37B5D /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				6FD2690227ED764100C37B5D /* XPParser.h */,
+				6FD2690327ED764100C37B5D /* XPParser.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -235,15 +296,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD268FE27ED5F6100C37B5D /* XPExpression.h in Headers */,
 				6FD268E627ED48CE00C37B5D /* PKAST.h in Headers */,
 				6FD268ED27ED4B7300C37B5D /* PKTypes.h in Headers */,
 				6FD268E127ED482700C37B5D /* TDNode.h in Headers */,
+				6FD2690427ED764100C37B5D /* XPParser.h in Headers */,
 				6FD268F027ED4BB300C37B5D /* PKToken.h in Headers */,
+				6FD2690827ED76F300C37B5D /* PKParser.h in Headers */,
 				6FD268CB27ECBD2F00C37B5D /* TDTemplateEngine.h in Headers */,
 				6FD268D427ED2B3F00C37B5D /* TDWriter.h in Headers */,
 				6FD268D827ED420400C37B5D /* SKPegKit-Prefix.h in Headers */,
 				6FD268DC27ED47F700C37B5D /* TDTag.h in Headers */,
 				6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */,
+				6FD2690C27ED77ED00C37B5D /* PKTokenizer.h in Headers */,
 				6FD268F527ED52C500C37B5D /* NSString+PEGKitAdditions.h in Headers */,
 				6FD268D027ED2A4B00C37B5D /* TDTemplateContext.h in Headers */,
 			);
@@ -346,13 +411,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD2690927ED76F300C37B5D /* PKParser.m in Sources */,
 				6FD268CC27ECBD2F00C37B5D /* TDTemplateEngine.m in Sources */,
 				6FD268F127ED4BB300C37B5D /* PKToken.m in Sources */,
 				6FD268D527ED2B3F00C37B5D /* TDWriter.m in Sources */,
 				6FD268F627ED52C500C37B5D /* NSString+PEGKitAdditions.m in Sources */,
 				6FD268DD27ED47F700C37B5D /* TDTag.m in Sources */,
+				6FD2690D27ED77ED00C37B5D /* PKTokenizer.m in Sources */,
 				6FD268E727ED48CE00C37B5D /* PKAST.m in Sources */,
+				6FD2690527ED764100C37B5D /* XPParser.m in Sources */,
 				6FD268D127ED2A4B00C37B5D /* TDTemplateContext.m in Sources */,
+				6FD268FF27ED5F6100C37B5D /* XPExpression.m in Sources */,
 				6FD268E227ED482700C37B5D /* TDNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD268F827ED5CFC00C37B5D /* XPBaseExpressionTests.m in Sources */,
 				6FD268BB27ECBB4600C37B5D /* SKPegKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
