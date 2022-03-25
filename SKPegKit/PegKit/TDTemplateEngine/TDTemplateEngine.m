@@ -23,7 +23,19 @@ const NSInteger TDTemplateEngineRenderingErrorCode = 1;
 @implementation TDTemplateEngine
 
 + (instancetype)templateEngine {
-    return nil;
+    return [[TDTemplateEngine alloc] init];
+}
+
+- (instancetype)init {
+    if (!(self = [super init])) { return nil; }
+
+    self.printStartDelimiter = @"{{";
+    self.printEndDelimiter = @"}}";
+    self.tagStartDelimiter = @"{%";
+    self.tagEndDelimiter = @"%}";
+    self.staticContext = [[TDTemplateContext alloc] init]
+
+    return self;
 }
 
 // pre-compile template into a tree

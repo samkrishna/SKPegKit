@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FD268B027ECBB4600C37B5D /* SKPegKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268AF27ECBB4600C37B5D /* SKPegKit.docc */; };
 		6FD268B627ECBB4600C37B5D /* SKPegKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */; };
 		6FD268BB27ECBB4600C37B5D /* SKPegKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268BA27ECBB4600C37B5D /* SKPegKitTests.m */; };
 		6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268AE27ECBB4600C37B5D /* SKPegKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FD268CB27ECBD2F00C37B5D /* TDTemplateEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268C927ECBD2F00C37B5D /* TDTemplateEngine.h */; };
+		6FD268CB27ECBD2F00C37B5D /* TDTemplateEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268C927ECBD2F00C37B5D /* TDTemplateEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268CC27ECBD2F00C37B5D /* TDTemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268CA27ECBD2F00C37B5D /* TDTemplateEngine.m */; };
+		6FD268D027ED2A4B00C37B5D /* TDTemplateContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268CE27ED2A4B00C37B5D /* TDTemplateContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD268D127ED2A4B00C37B5D /* TDTemplateContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268CF27ED2A4B00C37B5D /* TDTemplateContext.m */; };
+		6FD268D427ED2B3F00C37B5D /* TDWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268D227ED2B3F00C37B5D /* TDWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD268D527ED2B3F00C37B5D /* TDWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268D327ED2B3F00C37B5D /* TDWriter.m */; };
+		6FD268D827ED420400C37B5D /* SKPegKit-Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268D727ED3FCD00C37B5D /* SKPegKit-Prefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +32,17 @@
 /* Begin PBXFileReference section */
 		6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKPegKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD268AE27ECBB4600C37B5D /* SKPegKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPegKit.h; sourceTree = "<group>"; };
-		6FD268AF27ECBB4600C37B5D /* SKPegKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SKPegKit.docc; sourceTree = "<group>"; };
 		6FD268B527ECBB4600C37B5D /* SKPegKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKPegKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD268BA27ECBB4600C37B5D /* SKPegKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKPegKitTests.m; sourceTree = "<group>"; };
 		6FD268C527ECBB8B00C37B5D /* TDTestScaffold.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTestScaffold.h; sourceTree = "<group>"; };
 		6FD268C927ECBD2F00C37B5D /* TDTemplateEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTemplateEngine.h; sourceTree = "<group>"; };
 		6FD268CA27ECBD2F00C37B5D /* TDTemplateEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTemplateEngine.m; sourceTree = "<group>"; };
 		6FD268CD27ECC02600C37B5D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6FD268CE27ED2A4B00C37B5D /* TDTemplateContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTemplateContext.h; sourceTree = "<group>"; };
+		6FD268CF27ED2A4B00C37B5D /* TDTemplateContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTemplateContext.m; sourceTree = "<group>"; };
+		6FD268D227ED2B3F00C37B5D /* TDWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDWriter.h; sourceTree = "<group>"; };
+		6FD268D327ED2B3F00C37B5D /* TDWriter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDWriter.m; sourceTree = "<group>"; };
+		6FD268D727ED3FCD00C37B5D /* SKPegKit-Prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKPegKit-Prefix.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				6FD268CD27ECC02600C37B5D /* README.md */,
-				6FD268AD27ECBB4600C37B5D /* SKPegKit */,
+				6FD268AE27ECBB4600C37B5D /* SKPegKit.h */,
+				6FD268D727ED3FCD00C37B5D /* SKPegKit-Prefix.h */,
+				6FD268AD27ECBB4600C37B5D /* PegKit */,
 				6FD268B927ECBB4600C37B5D /* SKPegKitTests */,
 				6FD268AC27ECBB4600C37B5D /* Products */,
 			);
@@ -75,14 +85,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6FD268AD27ECBB4600C37B5D /* SKPegKit */ = {
+		6FD268AD27ECBB4600C37B5D /* PegKit */ = {
 			isa = PBXGroup;
 			children = (
 				6FD268C827ECBCF900C37B5D /* TDTemplateEngine */,
-				6FD268AE27ECBB4600C37B5D /* SKPegKit.h */,
-				6FD268AF27ECBB4600C37B5D /* SKPegKit.docc */,
 			);
-			path = SKPegKit;
+			path = PegKit;
 			sourceTree = "<group>";
 		};
 		6FD268B927ECBB4600C37B5D /* SKPegKitTests */ = {
@@ -115,6 +123,10 @@
 			children = (
 				6FD268C927ECBD2F00C37B5D /* TDTemplateEngine.h */,
 				6FD268CA27ECBD2F00C37B5D /* TDTemplateEngine.m */,
+				6FD268CE27ED2A4B00C37B5D /* TDTemplateContext.h */,
+				6FD268CF27ED2A4B00C37B5D /* TDTemplateContext.m */,
+				6FD268D227ED2B3F00C37B5D /* TDWriter.h */,
+				6FD268D327ED2B3F00C37B5D /* TDWriter.m */,
 			);
 			path = TDTemplateEngine;
 			sourceTree = "<group>";
@@ -127,7 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FD268CB27ECBD2F00C37B5D /* TDTemplateEngine.h in Headers */,
+				6FD268D427ED2B3F00C37B5D /* TDWriter.h in Headers */,
+				6FD268D827ED420400C37B5D /* SKPegKit-Prefix.h in Headers */,
 				6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */,
+				6FD268D027ED2A4B00C37B5D /* TDTemplateContext.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,8 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FD268B027ECBB4600C37B5D /* SKPegKit.docc in Sources */,
 				6FD268CC27ECBD2F00C37B5D /* TDTemplateEngine.m in Sources */,
+				6FD268D527ED2B3F00C37B5D /* TDWriter.m in Sources */,
+				6FD268D127ED2A4B00C37B5D /* TDTemplateContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +308,11 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKPegKit-Prefix.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -353,7 +372,10 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKPegKit-Prefix.h";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -380,6 +402,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKPegKit-Prefix.h";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -407,6 +432,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SKPegKit-Prefix.h";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

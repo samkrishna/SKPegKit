@@ -24,10 +24,10 @@ extern const NSInteger TDTemplateEngineRenderingErrorCode;
 // statitc/complile-time variables go here. This is the global scope at both compile-time and render-time. persists across compiles and renders
 @property (nonatomic, readonly, strong) TDTemplateContext *staticContext;
 
-@property (nonatomic, readonly, strong) NSString *printStartDelimiter;
-@property (nonatomic, readonly, strong) NSString *printEndDelimiter;
-@property (nonatomic, readonly, strong) NSString *tagStartDelimiter;
-@property (nonatomic, readonly, strong) NSString *tagEndDelimiter;
+@property (nonatomic, readwrite, strong) NSString *printStartDelimiter;
+@property (nonatomic, readwrite, strong) NSString *printEndDelimiter;
+@property (nonatomic, readwrite, strong) NSString *tagStartDelimiter;
+@property (nonatomic, readwrite, strong) NSString *tagEndDelimiter;
 
 + (instancetype)templateEngine;
 
