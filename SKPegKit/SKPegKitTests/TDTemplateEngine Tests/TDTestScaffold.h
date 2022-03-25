@@ -16,12 +16,8 @@
 @import Foundation;
 @import XCTest;
 
-#import "TDTemplateEngine.h"
-#import "TDTemplateContext.h"
-#import "PKTokenizer.h"
-
-#ifndef TDTestScaffold_h
-#define TDTestScaffold_h
+#import <SKPegKit/SKPegKit.h>
+#import <OCMock/OCMock.h>
 
 #define TDTrue(e) XCTAssertTrue((e), @"")
 #define TDFalse(e) XCTAssertFalse((e), @"")
@@ -30,4 +26,9 @@
 #define TDEquals(e1, e2) XCTAssertEqual((e1), (e2), @"")
 #define TDEqualObjects(e1, e2) XCTAssertEqualObjects((e1), (e2), @"")
 
-#endif /* TDTestScaffold_h */
+#define TD_EMIT 0
+
+#define VERIFY()     @try { [_mock verify]; } @catch (NSException *ex) { NSString *msg = [ex reason]; XCTAssertTrue(0, @"%@", msg); }
+
+extern NSString *TDAssembly(NSString *s);
+
