@@ -40,5 +40,7 @@
 - (instancetype)initWithString:(NSString *)s;
 - (instancetype)initWithStream:(NSInputStream *)s;
 
+- (PKToken *)nextToken;
+
 @end
 

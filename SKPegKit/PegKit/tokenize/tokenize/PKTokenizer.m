@@ -8,6 +8,7 @@
 #import "PKToken.h"
 #import "PKTokenizerState.h"
 #import "PKTokenizer.h"
+#import "PKReader.h"
 
 #define STATE_COUNT 256
 
@@ -62,6 +63,30 @@
     if (_string != s) {
         _string = [s copy];
     }
+}
+
+- (PKToken *)nextToken {
+    NSCAssert(self.reader, @"");
+    PKUniChar c = [self.reader read];
+
+    PKToken *result = nil;
+
+    if (PKEOF == c) {
+        result = [PKToken EOFToken];
+    }
+    else {
+        PKTokenizerState *state = [self tokenizerStateFor:c];
+
+        if (state) {
+            result = [state nextTokenFromReader:_reader startingWith:c tokenizer:self];
+            result.lineNumber = _lineNumber;
+        }
+        else {
+            result = [PKToken EOFToken];
+        }
+    }
+
+    return result;
 }
 
 @end
