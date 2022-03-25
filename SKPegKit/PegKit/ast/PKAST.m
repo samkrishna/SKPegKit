@@ -48,4 +48,55 @@
     return YES;
 }
 
+- (NSString *)description {
+    return [self treeDescription];
+}
+
+- (NSString *)treeDescription {
+    if (!self.children.count) {
+        return self.name;
+    }
+
+    NSMutableString *ms = [NSMutableString string];
+
+    if (![self isNil]) {
+        [ms appendFormat:@"(%@ ", self.name];
+    }
+
+    NSUInteger i = 0;
+    for (PKAST *child in self.children) {
+        NSString *fmt = (0 == i++) ? @"%@" : @" %@";
+        [ms appendFormat:fmt, [child treeDescription]];
+    }
+
+    if (![self isNil]) {
+        [ms appendString:@")"];
+    }
+
+    return [ms copy];
+}
+
+- (NSUInteger)type {
+    NSAssert2(0, @"%s is an abstract method. Must be overridden in %@", __PRETTY_FUNCTION__, self.className);
+    return NSNotFound;
+}
+
+- (void)addChild:(PKAST *)a {
+    NSParameterAssert(a);
+    if (!self.children) {
+        self.children = [NSMutableArray array];
+    }
+
+    [self.children addObject:a];
+}
+
+- (BOOL)isNil {
+    return !self.token;
+}
+
+
+- (NSString *)name {
+    return [self.token stringValue];
+}
+
 @end
