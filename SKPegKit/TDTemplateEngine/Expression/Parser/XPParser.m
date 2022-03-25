@@ -7,6 +7,13 @@
 
 #import "XPParser.h"
 
+#import <SKPegKit/SKPegKit.h>
+
 @implementation XPParser
+
++ (PKTokenizer *)tokenizer {
+    PKTokenizer *t = [PKTokenizer tokenizer];
+    return t;
+}
 
 @end

@@ -16,7 +16,7 @@
 		6FD268D127ED2A4B00C37B5D /* TDTemplateContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268CF27ED2A4B00C37B5D /* TDTemplateContext.m */; };
 		6FD268D427ED2B3F00C37B5D /* TDWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268D227ED2B3F00C37B5D /* TDWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268D527ED2B3F00C37B5D /* TDWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268D327ED2B3F00C37B5D /* TDWriter.m */; };
-		6FD268D827ED420400C37B5D /* SKPegKit-Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268D727ED3FCD00C37B5D /* SKPegKit-Prefix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD268D827ED420400C37B5D /* SKPegKit-Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268D727ED3FCD00C37B5D /* SKPegKit-Prefix.h */; };
 		6FD268DC27ED47F700C37B5D /* TDTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268DA27ED47F700C37B5D /* TDTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268DD27ED47F700C37B5D /* TDTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD268DB27ED47F700C37B5D /* TDTag.m */; };
 		6FD268E127ED482700C37B5D /* TDNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268DF27ED482700C37B5D /* TDNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,7 +37,7 @@
 		6FD2690927ED76F300C37B5D /* PKParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690727ED76F300C37B5D /* PKParser.m */; };
 		6FD2690C27ED77ED00C37B5D /* PKTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2690A27ED77ED00C37B5D /* PKTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD2690D27ED77ED00C37B5D /* PKTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690B27ED77ED00C37B5D /* PKTokenizer.m */; };
-		6FD2691027ED78F800C37B5D /* PKTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2690E27ED78F800C37B5D /* PKTokenizerState.h */; };
+		6FD2691027ED78F800C37B5D /* PKTokenizerState.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD2690E27ED78F800C37B5D /* PKTokenizerState.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD2691127ED78F800C37B5D /* PKTokenizerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2690F27ED78F800C37B5D /* PKTokenizerState.m */; };
 /* End PBXBuildFile section */
 
