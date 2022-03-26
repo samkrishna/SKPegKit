@@ -9,4 +9,16 @@
 
 @implementation PKSymbolRootNode
 
+- (void)add:(NSString *)s {
+
+}
+
+- (void)remove:(NSString *)s {
+
+}
+
+- (NSString *)nextSymbol:(PKReader *)r startingWith:(PKUniChar)cin {
+    return nil;
+}
+
 @end

@@ -5,7 +5,7 @@
 //  Created by Sam Krishna on 3/26/22.
 //
 
-#import <SKPegKit/SKPegKit.h>
+@import Foundation;
 
 @interface PKSymbolNode : NSObject
 

@@ -9,5 +9,7 @@
 
 @interface PKSymbolState : PKTokenizerState
 
+- (void)add:(NSString *)s;
+
 @end
 
