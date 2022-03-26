@@ -96,4 +96,8 @@
     return result;
 }
 
+- (void)setTokenizerState:(PKTokenizerState *)state from:(PKUniChar)start to:(PKUniChar)end {
+
+}
+
 @end
