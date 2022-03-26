@@ -30,12 +30,6 @@
 
 @interface PKTokenizer : NSObject
 
-@property (nonatomic, readonly, assign) NSUInteger lineNumber;
-@property (nonatomic, readwrite, weak) id<PKTokenizerDelegate> delegate;
-
-@property (nonatomic, readwrite, strong) NSString *string;
-@property (nonatomic, readwrite, strong) NSInputStream *stream;
-
 + (PKTokenizer *)tokenizer;
 + (PKTokenizer *)tokenizerWithString:(NSString *)s;
 + (PKTokenizer *)tokenizerWithStream:(NSInputStream *)s;
@@ -44,6 +38,14 @@
 - (instancetype)initWithStream:(NSInputStream *)s;
 
 - (PKToken *)nextToken;
+
+- (void)setTokenizerState:(PKTokenizerState *)state from:(PKUniChar)start to:(PKUniChar)end;
+
+@property (nonatomic, readonly, assign) NSUInteger lineNumber;
+@property (nonatomic, readwrite, weak) id<PKTokenizerDelegate> delegate;
+
+@property (nonatomic, readwrite, strong) NSString *string;
+@property (nonatomic, readwrite, strong) NSInputStream *stream;
 
 @property (nonatomic, readonly, strong) PKNumberState *numberState;
 @property (nonatomic, readonly, strong) PKQuoteState *quoteState;
