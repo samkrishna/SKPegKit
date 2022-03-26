@@ -26,7 +26,8 @@
 #import <SKPegKit/PKURLState.h>
 #import <SKPegKit/PKTwitterState.h>
 #import <SKPegKit/PKHashtagState.h>
-
+#import <SKPegKit/PKSymbolNode.h>
+#import <SKPegKit/PKSymbolRootNode.h>
 
 #import <SKPegKit/TDTemplateEngine.h>
 #import <SKPegKit/TDTemplateContext.h>
