@@ -5,7 +5,7 @@
 //  Created by Sam Krishna on 3/24/22.
 //
 
-#import "TDNode.h"
+#import <SKPegKit/TDNode.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -5,7 +5,7 @@
 //  Created by Sam Krishna on 3/24/22.
 //
 
-#import "PKParser.h"
+#import <SKPegKit/PKParser.h>
 
 @class PKTokenizer;
 @class TDTemplateEngine;

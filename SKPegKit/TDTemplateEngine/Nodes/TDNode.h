@@ -5,7 +5,7 @@
 //  Created by Sam Krishna on 3/24/22.
 //
 
-#import "PKAST.h"
+#import <SKPegKit/PKAST.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

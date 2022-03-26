@@ -6,7 +6,7 @@
 //
 
 @import Foundation;
-#import "PKTypes.h"
+#import <SKPegKit/PKTypes.h>
 
 @class PKTokenizer;
 @class PKToken;

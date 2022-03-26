@@ -6,7 +6,7 @@
 //
 
 #import "PKToken.h"
-#import "PKTypes.h"
+#import <SKPegKit/PKTypes.h>
 #import "NSString+PEGKitAdditions.h"
 
 @interface PKTokenEOF : PKToken

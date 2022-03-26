@@ -22,6 +22,8 @@
 #import <SKPegKit/PKWhitespaceState.h>
 #import <SKPegKit/PKDelimitState.h>
 #import <SKPegKit/PKCommentState.h>
+#import <SKPegKit/PKSingleLineCommentState.h>
+#import <SKPegKit/PKMultiLineCommentState.h>
 #import <SKPegKit/PKEmailState.h>
 #import <SKPegKit/PKURLState.h>
 #import <SKPegKit/PKTwitterState.h>
