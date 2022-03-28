@@ -71,6 +71,59 @@
     return self;
 }
 
+- (instancetype)initWithString:(NSString *)str stream:(NSInputStream *)stm {
+    if (!(self = [super init])) { return nil; }
+
+    self.string = str;
+    self.stream = stm;
+    self.reader = [[PKReader alloc] init];
+
+    self.numberState = [[PKNumberState alloc] init];
+    self.quoteState = [[PKQuoteState alloc] init];
+    self.commentState = [[PKCommentState alloc] init];
+    self.symbolState = [[PKSymbolState alloc] init];
+    self.whitespaceState = [[PKWhitespaceState alloc] init];
+    self.wordState = [[PKWordState alloc] init];
+    self.delimitState = [[PKDelimitState alloc] init];
+    self.URLState = [[PKURLState alloc] init];
+
+#if PK_PLATFORM_EMAIL_STATE
+    self.emalState = [[PKEmailState alloc] init];
+    self.emalState.fallbackState = self.wordState;
+#endif
+#if PK_PLATFORM_TWITTER_STATE
+    self.twitterState = [[PKTwitterState alloc] init];
+    self.hashtagState = [[PKHashtagState alloc] init];
+    self.twitterState.fallbackState = self.symbolState;
+    self.hashtagState.fallbackState = self.symbolState;
+#endif
+
+    self.numberState.fallbackState = self.symbolState;
+    self.quoteState.fallbackState = self.symbolState;
+    self.URLState.fallbackState = self.wordState;
+
+    self.tokenizerStates = [NSMutableArray arrayWithCapacity:STATE_COUNT];
+
+    for (NSUInteger i = 0; i < STATE_COUNT; i++) {
+        [self.tokenizerStates addObject:[self defaultTokenizerStateFor:(PKUniChar)i]];
+    }
+
+    [self.symbolState add:@"<="];
+    [self.symbolState add:@">="];
+    [self.symbolState add:@"!="];
+    [self.symbolState add:@"=="];
+
+    [self.commentState addSingleLineStartMarker:@"//"];
+    [self.commentState addMultiLineStartMarker:@"/*" endMarker:@"*/"];
+    [self setTokenizerState:self.commentState from:'/' to:'/'];
+
+    return self;
+}
+
+- (void)dealloc {
+    self.delegate = nil;
+}
+
 - (void)setString:(NSString *)s {
     if (_string != s) {
         _string = [s copy];
