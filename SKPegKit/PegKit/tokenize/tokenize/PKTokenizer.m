@@ -158,4 +158,104 @@
 
 }
 
+- (PKTokenizerState *)defaultTokenizerStateFor:(PKUniChar)c {
+    if (c >= 0 && c <= ' ') {
+        return self.whitespaceState;
+    }
+    else if (c == 33) {
+        return self.symbolState;
+    }
+    else if (c == '"') {
+        return self.quoteState;
+    }
+    else if (c == '#') {
+#if PK_PLATFORM_TWITTER_STATE
+        return self.hashtagState;
+#else
+        return self.symbolState;
+#endif
+    }
+    else if (c >= 36 && c <= 38) {
+        return self.symbolState;
+    }
+    else if (c == '\'') {
+        return self.quoteState;
+    }
+    else if (c >= 40 && c <= 42) {
+        return self.symbolState;
+    }
+    else if (c == '+') {
+        return self.symbolState;
+    }
+    else if (c == 44) {
+        return self.symbolState;
+    }
+    else if (c == '-') {
+        return self.numberState;
+    }
+    else if (c == '.') {
+        return self.numberState;
+    }
+    else if (c == '/') {
+        return self.symbolState;
+    }
+    else if (c >= '0' && c <= '9') {
+        return self.numberState;
+    }
+    else if (c >= 58 && c <= 63) {
+        return self.symbolState;
+    }
+    else if (c == '@') {
+#if PK_PLATFORM_TWITTER_STATE
+        return self.twitterState;
+#else
+        return self.symbolState;
+#endif
+    }
+    else if (c >= 'A' && c <= 'Z') {
+        return self.URLState;
+    }
+    else if (c >= 91 && c <= 96) {
+        return self.symbolState;
+    }
+    else if (c >= 'a' && c <= 'z') {
+        return self.URLState;
+    }
+    else if (c >= 123 && c <= 191) {
+        return self.symbolState;
+    }
+    else if (c >= 123 && c <= 191) {
+        return self.symbolState;
+    }
+    else if (c >= 0xC0 && c <= 0xFF) { // From:192 to:255    From:0xC0 to:0xFF
+        return self.wordState;
+    }
+    else if (c >= 0x19E0 && c <= 0x19FF) { // khmer symbols
+        return _symbolState;
+    }
+    else if (c >= 0x2000 && c <= 0x2BFF) { // various symbols
+        return _symbolState;
+    }
+    else if (c >= 0x2E00 && c <= 0x2E7F) { // supplemental punctuation
+        return _symbolState;
+    }
+    else if (c >= 0x3000 && c <= 0x303F) { // cjk symbols & punctuation
+        return _symbolState;
+    }
+    else if (c >= 0x3200 && c <= 0x33FF) { // enclosed cjk letters and months, cjk compatibility
+        return _symbolState;
+    }
+    else if (c >= 0x4DC0 && c <= 0x4DFF) { // yijing hexagram symbols
+        return _symbolState;
+    }
+    else if (c >= 0xFE30 && c <= 0xFE6F) { // cjk compatibility forms, small form variants
+        return _symbolState;
+    }
+    else if (c >= 0xFF00 && c <= 0xFFFF) { // hiragana & katakana halfwitdh & fullwidth forms, Specials
+        return _symbolState;
+    }
+
+    return _wordState;
+}
+
 @end
