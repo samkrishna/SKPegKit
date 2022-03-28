@@ -5,7 +5,7 @@
 //  Created by Sam Krishna on 3/25/22.
 //
 
-#import <SKPegKit/SKPegKit.h>
+#import <SKPegKit/PKTokenizerState.h>
 
 @interface PKSymbolState : PKTokenizerState
 
