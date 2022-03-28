@@ -9,4 +9,20 @@
 
 @implementation PKCommentState
 
+- (void)addSingleLineStartMarker:(NSString *)start {
+
+}
+
+- (void)removeSingleLineStartMarker:(NSString *)start {
+
+}
+
+- (void)addMultiLineStartMarker:(NSString *)start endMarker:(NSString *)end {
+
+}
+
+- (void)removeMultiLineStartMarker:(NSString *)start {
+    
+}
+
 @end
