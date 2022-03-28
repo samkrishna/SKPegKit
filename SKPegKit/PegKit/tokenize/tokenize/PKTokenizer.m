@@ -29,8 +29,13 @@
 @property (nonatomic, readwrite, strong) PKWordState *wordState;
 @property (nonatomic, readwrite, strong) PKDelimitState *delimitState;
 @property (nonatomic, readwrite, strong) PKURLState *URLState;
+#if PK_PLATFORM_EMAIL_STATE
 @property (nonatomic, readwrite, strong) PKEmailState *emalState;
+#endif
+#if PK_PLATFORM_TWITTER_STATE
+@property (nonatomic, readwrite, strong) PKTwitterState *twitterState;
 @property (nonatomic, readwrite, strong) PKHashtagState *hashtagState;
+#endif
 
 - (instancetype)initWithString:(NSString *)str stream:(NSInputStream *)stm;
 - (PKTokenizerState *)tokenizerStateFor:(PKUniChar)c;

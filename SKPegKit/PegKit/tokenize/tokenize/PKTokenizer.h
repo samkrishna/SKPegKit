@@ -55,8 +55,13 @@
 @property (nonatomic, readonly, strong) PKWordState *wordState;
 @property (nonatomic, readonly, strong) PKDelimitState *delimitState;
 @property (nonatomic, readonly, strong) PKURLState *URLState;
+#if PK_PLATFORM_EMAIL_STATE
 @property (nonatomic, readonly, strong) PKEmailState *emalState;
+#endif
+#if PK_PLATFORM_TWITTER_STATE
+@property (nonatomic, readonly, strong) PKTwitterState *twitterState;
 @property (nonatomic, readonly, strong) PKHashtagState *hashtagState;
+#endif
 
 @end
 
