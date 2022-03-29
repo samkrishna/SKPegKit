@@ -24,7 +24,7 @@
 - (void)testFallbackStateCast {
     [t setTokenizerState:t.symbolState from:'c' to:'c'];
     [t.symbolState setFallbackState:t.wordState from:'c' to:'c'];
-    [t.symbolState add:@"case"];
+    [t.symbolState add:@"cast"];
     t.string = @"foo cast cat";
     tok = [t nextToken];
     TDTrue(tok.isWord);
