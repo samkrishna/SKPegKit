@@ -30,7 +30,15 @@
     TDTrue(tok.isWord);
     TDEqualObjects(@"foo", tok.stringValue);
 
-    // TESTS SO FAR FINALLY PASS AT THIS POINT!!!
+    // TESTS SO FAR FINALLY PASS AT THIS POINT!!! 2022-03-28 20:14:07 -0700
+
+    tok = [t nextToken];
+    TDTrue(tok.isSymbol);
+    TDEqualObjects(@"cast", tok.stringValue);
+
+//    tok = [t nextToken];
+//    TDTrue(tok.isSymbol);
+//    TDEqualObjects(@"c", tok.stringValue);
 }
 
 @end
