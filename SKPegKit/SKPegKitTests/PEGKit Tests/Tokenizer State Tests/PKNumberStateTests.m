@@ -63,5 +63,15 @@
     TDEqualObjects(@"010", tok.stringValue);
 }
 
+- (void)testOctPrefix0Dot0 {
+    [t.numberState addPrefix:@"0" forRadix:8];
+    s = @"0.0";
+    t.string = s;
+    PKToken *tok = [t nextToken];
+    TDEquals(0.0, tok.doubleValue);
+    TDTrue(tok.isNumber);
+    TDEqualObjects(@"0.0", tok.stringValue);
+}
+
 
 @end
