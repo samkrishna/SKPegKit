@@ -15,10 +15,6 @@
 @property (nonatomic, readwrite, assign) NSUInteger lineNumber;
 @end
 
-@interface PKToken ()
-@property (nonatomic, readwrite, assign) NSUInteger offset;
-@end
-
 @interface PKTokenizerState ()
 - (void)resetWithReader:(PKReader *)r;
 - (PKTokenizerState *)nextTokenizerStateFor:(PKUniChar)c tokenizer:(PKTokenizer *)t;

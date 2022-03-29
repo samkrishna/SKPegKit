@@ -14,10 +14,6 @@
 #define PKTRUE (id)kCFBooleanTrue
 #define PKFALSE (id)kCFBooleanFalse
 
-@interface PKToken ()
-@property (nonatomic, readwrite, assign) NSUInteger offset;
-@end
-
 @interface PKTokenizer ()
 @property (nonatomic, readwrite, assign) NSUInteger lineNumber;
 @end

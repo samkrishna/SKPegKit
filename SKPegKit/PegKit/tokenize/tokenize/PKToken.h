@@ -41,8 +41,9 @@ typedef NS_ENUM(NSInteger, PKTokenType) {
 @property (nonatomic, readonly, assign) BOOL isTwitter;
 @property (nonatomic, readonly, assign) BOOL isHashtag;
 
+@property (nonatomic, readwrite, assign) NSUInteger offset;
+
 @property (nonatomic, readonly, assign) PKTokenType tokenType;
-@property (nonatomic, readonly, assign) NSUInteger offset;
 @property (nonatomic, readonly, assign) NSUInteger lineNumber;
 @property (nonatomic, readonly, assign) NSInteger tokenKind;
 @property (nonatomic, readonly, assign) double doubleValue;

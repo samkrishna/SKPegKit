@@ -30,7 +30,6 @@
 
 @interface PKToken ()
 @property (nonatomic, readwrite, assign) PKTokenType tokenType;
-@property (nonatomic, readwrite, assign) NSUInteger offset;
 @property (nonatomic, readwrite, assign) NSUInteger lineNumber;
 @property (nonatomic, readwrite, assign) NSInteger tokenKind;
 @property (nonatomic, readwrite, assign) double doubleValue;
