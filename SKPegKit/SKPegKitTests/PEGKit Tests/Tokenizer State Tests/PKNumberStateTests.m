@@ -8,18 +8,30 @@
 #import "TDTestScaffold.h"
 
 
-@interface PKNumberStateTests : XCTestCase
+@interface PKNumberStateTests : XCTestCase {
+    PKNumberState *numberState;
+    PKTokenizer *t;
+    PKReader *r;
+    NSString *s;
+}
 
 @end
 
 @implementation PKNumberStateTests
 
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    t = [[PKTokenizer alloc] init];
+    r = [[PKReader alloc] init];
+    numberState = t.numberState;
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)testOctPrefix0 {
+    [t.numberState addPrefix:@"0" forRadix:8];
+    s= @"0";
+    t.string = s;
+    PKToken *tok = [t nextToken];
+    TDTrue(tok.isNumber);
+    TDEqualObjects(@"0", tok.stringValue);
 }
 
 @end
