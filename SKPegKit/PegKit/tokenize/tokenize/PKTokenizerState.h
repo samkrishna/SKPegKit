@@ -16,6 +16,7 @@
 
 @property (nonatomic, readwrite, strong) PKTokenizerState *fallbackState;
 @property (nonatomic, readwrite, assign) BOOL disabled;
+@property (nonatomic, readonly, strong) NSString *bufferedString;
 
 - (PKToken *)nextTokenFromReader:(PKReader *)r startingWith:(PKUniChar)cin tokenizer:(PKTokenizer *)t;
 

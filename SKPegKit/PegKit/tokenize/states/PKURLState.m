@@ -19,7 +19,6 @@
 - (void)resetWithReader:(PKReader *)r;
 - (void)append:(PKUniChar)c;
 
-@property (nonatomic, readonly, strong) NSString *bufferedString;
 @property (nonatomic, readonly, assign) NSUInteger offset;
 @end
 
