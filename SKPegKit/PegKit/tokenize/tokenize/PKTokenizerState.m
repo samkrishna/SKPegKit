@@ -24,7 +24,7 @@
 @implementation PKTokenizerState
 
 - (PKToken *)nextTokenFromReader:(PKReader *)r startingWith:(PKUniChar)cin tokenizer:(PKTokenizer *)t {
-    NSCAssert(0, @"%s must be overridden", __PRETTY_FUNCTION__);
+    NSAssert1(0, @"%s must be overridden", __PRETTY_FUNCTION__);
     return nil;
 }
 
@@ -41,7 +41,7 @@
     }
 
     for (NSUInteger i = start; i <= end; i++) {
-        self.fallbackStates[i] = state;
+        [self.fallbackStates replaceObjectAtIndex:i withObject:state];
     }
 }
 
