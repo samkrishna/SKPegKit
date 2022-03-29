@@ -17,7 +17,6 @@
 
 @interface PKTokenizerState ()
 @property (nonatomic, readwrite, strong) NSMutableString *stringbuf;
-@property (nonatomic, readwrite, assign) NSUInteger offset;
 @property (nonatomic, readwrite, strong) NSMutableArray *fallbackStates;
 @end
 
