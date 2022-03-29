@@ -19,7 +19,10 @@
 @property (nonatomic, readonly, strong) NSString *bufferedString;
 
 - (PKToken *)nextTokenFromReader:(PKReader *)r startingWith:(PKUniChar)cin tokenizer:(PKTokenizer *)t;
-
 - (void)setFallbackState:(PKTokenizerState *)state from:(PKUniChar)start to:(PKUniChar)end;
+
+- (void)resetWithReader:(PKReader *)r;
+- (void)append:(PKUniChar)c;
+- (void)appendString:(NSString *)s;
 
 @end
