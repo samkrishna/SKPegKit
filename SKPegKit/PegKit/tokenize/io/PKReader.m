@@ -31,7 +31,7 @@
 }
 
 - (void)setString:(NSString *)s {
-    NSCAssert(!self.stream, @"");
+    TDConditionAssert(!self.stream);
 
     if (_string != s) {
         _string = s;
@@ -42,7 +42,7 @@
 }
 
 - (void)setStream:(NSInputStream *)s {
-    NSCAssert(!self.string, @"");
+    TDConditionAssert(!self.string);
 
     if (_stream != s) {
         _stream = s;

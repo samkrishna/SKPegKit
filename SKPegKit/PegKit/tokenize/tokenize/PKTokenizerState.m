@@ -52,13 +52,13 @@
 
 - (void)append:(PKUniChar)c {
     NSParameterAssert(c != PKEOF);
-    NSCAssert(self.stringbuf, @"");
+    TDConditionAssert(self.stringbuf);
     [self.stringbuf appendFormat:@"%C", (unichar)c];
 }
 
 - (void)appendString:(NSString *)s {
     NSParameterAssert(s);
-    NSCAssert(self.stringbuf, @"");
+    TDConditionAssert(self.stringbuf);
     [self.stringbuf appendString:s];
 }
 

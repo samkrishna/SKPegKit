@@ -18,3 +18,5 @@
 
 #define PK_PLATFORM_EMAIL_STATE 0
 #define PK_PLATFORM_TWITTER_STATE 0
+
+#define TDConditionAssert(condition) NSAssert((condition), @"Invalid condition not satisfying: %@", @#condition)

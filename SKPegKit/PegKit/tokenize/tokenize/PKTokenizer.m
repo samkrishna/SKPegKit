@@ -142,7 +142,7 @@
 }
 
 - (PKToken *)nextToken {
-    NSCAssert(self.reader, @"");
+    TDConditionAssert(self.reader);
     PKUniChar c = [self.reader read];
 
     PKToken *result = nil;
@@ -167,7 +167,7 @@
 
 - (void)setTokenizerState:(PKTokenizerState *)state from:(PKUniChar)start to:(PKUniChar)end {
     NSParameterAssert(state);
-    NSAssert(self.tokenizerStates, @"");
+    TDConditionAssert(self.tokenizerStates);
 
     for (NSUInteger i = start; i <= end; i++) {
         [self.tokenizerStates replaceObjectAtIndex:i withObject:state];
@@ -189,7 +189,7 @@
         state = [state nextTokenizerStateFor:c tokenizer:self];
     }
 
-    NSAssert(state, @"");
+    TDConditionAssert(state);
     return state;
 }
 
