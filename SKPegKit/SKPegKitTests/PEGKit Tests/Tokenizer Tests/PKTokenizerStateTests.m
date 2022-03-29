@@ -29,6 +29,8 @@
     tok = [t nextToken];
     TDTrue(tok.isWord);
     TDEqualObjects(@"foo", tok.stringValue);
+
+    // TESTS SO FAR FINALLY PASS AT THIS POINT!!!
 }
 
 @end
