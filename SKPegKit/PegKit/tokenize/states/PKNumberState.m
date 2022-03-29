@@ -169,7 +169,7 @@
         }
 
         if (!foundPrefix) {
-            _base = 16;
+            _base = 10;
             [r unread:_prefix.length];
             self.prefix = nil;
         }
