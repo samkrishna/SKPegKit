@@ -14,6 +14,16 @@
 		6F84D57C27EF5852005612A1 /* PKSymbolRootNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F84D57A27EF5852005612A1 /* PKSymbolRootNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F84D57D27EF5852005612A1 /* PKSymbolRootNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D57B27EF5852005612A1 /* PKSymbolRootNode.m */; };
 		6F84D58027F2B34F005612A1 /* PKWhitespaceStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D57F27F2B34F005612A1 /* PKWhitespaceStateTests.m */; };
+		6F84D58227F2C1C5005612A1 /* PKCommentStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D58127F2C1C5005612A1 /* PKCommentStateTests.m */; };
+		6F84D58427F2C1D4005612A1 /* PKDelimitStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D58327F2C1D4005612A1 /* PKDelimitStateTests.m */; };
+		6F84D58627F2C1E2005612A1 /* PKEmailStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D58527F2C1E2005612A1 /* PKEmailStateTests.m */; };
+		6F84D58827F2C1EB005612A1 /* PKNumberStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D58727F2C1EB005612A1 /* PKNumberStateTests.m */; };
+		6F84D58A27F2C1F7005612A1 /* PKQuoteStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D58927F2C1F7005612A1 /* PKQuoteStateTests.m */; };
+		6F84D58C27F2C20C005612A1 /* PKScientificNumberStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D58B27F2C20C005612A1 /* PKScientificNumberStateTests.m */; };
+		6F84D58E27F2C21A005612A1 /* PKSymbolStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D58D27F2C21A005612A1 /* PKSymbolStateTests.m */; };
+		6F84D59027F2C225005612A1 /* PKTwitterStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D58F27F2C225005612A1 /* PKTwitterStateTests.m */; };
+		6F84D59227F2C22E005612A1 /* PKURLStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D59127F2C22E005612A1 /* PKURLStateTests.m */; };
+		6F84D59427F2C23B005612A1 /* PKWordStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D59327F2C23B005612A1 /* PKWordStateTests.m */; };
 		6FD268B627ECBB4600C37B5D /* SKPegKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */; };
 		6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268AE27ECBB4600C37B5D /* SKPegKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268CB27ECBD2F00C37B5D /* TDTemplateEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268C927ECBD2F00C37B5D /* TDTemplateEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -97,6 +107,16 @@
 		6F84D57A27EF5852005612A1 /* PKSymbolRootNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKSymbolRootNode.h; sourceTree = "<group>"; };
 		6F84D57B27EF5852005612A1 /* PKSymbolRootNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSymbolRootNode.m; sourceTree = "<group>"; };
 		6F84D57F27F2B34F005612A1 /* PKWhitespaceStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKWhitespaceStateTests.m; sourceTree = "<group>"; };
+		6F84D58127F2C1C5005612A1 /* PKCommentStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKCommentStateTests.m; sourceTree = "<group>"; };
+		6F84D58327F2C1D4005612A1 /* PKDelimitStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKDelimitStateTests.m; sourceTree = "<group>"; };
+		6F84D58527F2C1E2005612A1 /* PKEmailStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKEmailStateTests.m; sourceTree = "<group>"; };
+		6F84D58727F2C1EB005612A1 /* PKNumberStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKNumberStateTests.m; sourceTree = "<group>"; };
+		6F84D58927F2C1F7005612A1 /* PKQuoteStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKQuoteStateTests.m; sourceTree = "<group>"; };
+		6F84D58B27F2C20C005612A1 /* PKScientificNumberStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKScientificNumberStateTests.m; sourceTree = "<group>"; };
+		6F84D58D27F2C21A005612A1 /* PKSymbolStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSymbolStateTests.m; sourceTree = "<group>"; };
+		6F84D58F27F2C225005612A1 /* PKTwitterStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKTwitterStateTests.m; sourceTree = "<group>"; };
+		6F84D59127F2C22E005612A1 /* PKURLStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKURLStateTests.m; sourceTree = "<group>"; };
+		6F84D59327F2C23B005612A1 /* PKWordStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKWordStateTests.m; sourceTree = "<group>"; };
 		6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKPegKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD268AE27ECBB4600C37B5D /* SKPegKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPegKit.h; sourceTree = "<group>"; };
 		6FD268B527ECBB4600C37B5D /* SKPegKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKPegKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,7 +247,17 @@
 		6F84D57E27F2B325005612A1 /* Tokenizer State Tests */ = {
 			isa = PBXGroup;
 			children = (
+				6F84D58127F2C1C5005612A1 /* PKCommentStateTests.m */,
+				6F84D58327F2C1D4005612A1 /* PKDelimitStateTests.m */,
+				6F84D58527F2C1E2005612A1 /* PKEmailStateTests.m */,
+				6F84D58727F2C1EB005612A1 /* PKNumberStateTests.m */,
+				6F84D58927F2C1F7005612A1 /* PKQuoteStateTests.m */,
+				6F84D58B27F2C20C005612A1 /* PKScientificNumberStateTests.m */,
+				6F84D58D27F2C21A005612A1 /* PKSymbolStateTests.m */,
+				6F84D58F27F2C225005612A1 /* PKTwitterStateTests.m */,
+				6F84D59127F2C22E005612A1 /* PKURLStateTests.m */,
 				6F84D57F27F2B34F005612A1 /* PKWhitespaceStateTests.m */,
+				6F84D59327F2C23B005612A1 /* PKWordStateTests.m */,
 			);
 			path = "Tokenizer State Tests";
 			sourceTree = "<group>";
@@ -660,12 +690,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F84D59027F2C225005612A1 /* PKTwitterStateTests.m in Sources */,
+				6F84D58627F2C1E2005612A1 /* PKEmailStateTests.m in Sources */,
 				6FD2691327EE055900C37B5D /* TDTestScaffold.m in Sources */,
+				6F84D59227F2C22E005612A1 /* PKURLStateTests.m in Sources */,
 				6FD268F827ED5CFC00C37B5D /* XPBaseExpressionTests.m in Sources */,
 				6FD2691C27EE199000C37B5D /* PKTokenizerTests.m in Sources */,
+				6F84D58A27F2C1F7005612A1 /* PKQuoteStateTests.m in Sources */,
 				6F84D58027F2B34F005612A1 /* PKWhitespaceStateTests.m in Sources */,
+				6F84D59427F2C23B005612A1 /* PKWordStateTests.m in Sources */,
+				6F84D58E27F2C21A005612A1 /* PKSymbolStateTests.m in Sources */,
+				6F84D58C27F2C20C005612A1 /* PKScientificNumberStateTests.m in Sources */,
+				6F84D58227F2C1C5005612A1 /* PKCommentStateTests.m in Sources */,
 				6F84D57427EF5556005612A1 /* PKTokenizerStateTests.m in Sources */,
+				6F84D58827F2C1EB005612A1 /* PKNumberStateTests.m in Sources */,
 				6FD2691A27EE121400C37B5D /* PKReaderTests.m in Sources */,
+				6F84D58427F2C1D4005612A1 /* PKDelimitStateTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
