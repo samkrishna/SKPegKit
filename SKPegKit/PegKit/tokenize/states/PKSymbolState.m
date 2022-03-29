@@ -15,13 +15,6 @@
 @property (nonatomic, readwrite, assign) NSUInteger lineNumber;
 @end
 
-@interface PKTokenizerState ()
-- (void)resetWithReader:(PKReader *)r;
-- (PKTokenizerState *)nextTokenizerStateFor:(PKUniChar)c tokenizer:(PKTokenizer *)t;
-
-@property (nonatomic, readwrite, assign) NSUInteger offset;
-@end
-
 @interface PKSymbolState ()
 @property (nonatomic, readwrite, strong) PKSymbolRootNode *rootNode;
 @property (nonatomic, readwrite, strong) NSMutableSet *addedSymbols;

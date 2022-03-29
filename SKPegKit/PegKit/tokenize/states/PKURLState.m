@@ -14,14 +14,6 @@
 // Gruber original
 //  \b(([\w-]+://?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/)))
 
-@interface PKTokenizerState ()
-- (PKTokenizerState *)nextTokenizerStateFor:(PKUniChar)c tokenizer:(PKTokenizer *)t;
-- (void)resetWithReader:(PKReader *)r;
-- (void)append:(PKUniChar)c;
-
-@property (nonatomic, readonly, assign) NSUInteger offset;
-@end
-
 @interface PKURLState ()
 @property (nonatomic, readwrite, assign) PKUniChar c;
 @property (nonatomic, readwrite, assign) PKUniChar lastChar;

@@ -14,13 +14,6 @@
 #define PKTRUE (id)kCFBooleanTrue
 #define PKFALSE (id)kCFBooleanFalse
 
-@interface PKTokenizerState ()
-- (void)resetWithReader:(PKReader *)r;
-- (void)append:(PKUniChar)c;
-
-@property (nonatomic, readwrite, assign) NSUInteger offset;
-@end
-
 @interface PKWordState ()
 @property (nonatomic, readwrite, strong) NSMutableArray *wordChars;
 @end

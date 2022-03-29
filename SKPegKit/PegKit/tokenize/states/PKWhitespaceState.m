@@ -18,13 +18,6 @@
 @property (nonatomic, readwrite, assign) NSUInteger lineNumber;
 @end
 
-@interface PKTokenizerState ()
-- (void)resetWithReader:(PKReader *)r;
-- (void)append:(PKUniChar)c;
-
-@property (nonatomic, readwrite, assign) NSUInteger offset;
-@end
-
 @interface PKWhitespaceState ()
 @property (nonatomic, readwrite, strong) NSMutableArray *whitespaceChars;
 @end
