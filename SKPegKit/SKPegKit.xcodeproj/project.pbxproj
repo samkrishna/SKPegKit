@@ -13,6 +13,7 @@
 		6F84D57927EF5845005612A1 /* PKSymbolNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D57727EF5845005612A1 /* PKSymbolNode.m */; };
 		6F84D57C27EF5852005612A1 /* PKSymbolRootNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F84D57A27EF5852005612A1 /* PKSymbolRootNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F84D57D27EF5852005612A1 /* PKSymbolRootNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D57B27EF5852005612A1 /* PKSymbolRootNode.m */; };
+		6F84D58027F2B34F005612A1 /* PKWhitespaceStateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F84D57F27F2B34F005612A1 /* PKWhitespaceStateTests.m */; };
 		6FD268B627ECBB4600C37B5D /* SKPegKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */; };
 		6FD268BC27ECBB4600C37B5D /* SKPegKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268AE27ECBB4600C37B5D /* SKPegKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FD268CB27ECBD2F00C37B5D /* TDTemplateEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD268C927ECBD2F00C37B5D /* TDTemplateEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -95,6 +96,7 @@
 		6F84D57727EF5845005612A1 /* PKSymbolNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSymbolNode.m; sourceTree = "<group>"; };
 		6F84D57A27EF5852005612A1 /* PKSymbolRootNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKSymbolRootNode.h; sourceTree = "<group>"; };
 		6F84D57B27EF5852005612A1 /* PKSymbolRootNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKSymbolRootNode.m; sourceTree = "<group>"; };
+		6F84D57F27F2B34F005612A1 /* PKWhitespaceStateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PKWhitespaceStateTests.m; sourceTree = "<group>"; };
 		6FD268AB27ECBB4600C37B5D /* SKPegKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SKPegKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD268AE27ECBB4600C37B5D /* SKPegKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKPegKit.h; sourceTree = "<group>"; };
 		6FD268B527ECBB4600C37B5D /* SKPegKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKPegKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -220,6 +222,14 @@
 				6F84D57B27EF5852005612A1 /* PKSymbolRootNode.m */,
 			);
 			path = symbol;
+			sourceTree = "<group>";
+		};
+		6F84D57E27F2B325005612A1 /* Tokenizer State Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6F84D57F27F2B34F005612A1 /* PKWhitespaceStateTests.m */,
+			);
+			path = "Tokenizer State Tests";
 			sourceTree = "<group>";
 		};
 		6FD268A127ECBB4600C37B5D = {
@@ -444,6 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				6F84D57227EF5524005612A1 /* Tokenizer Tests */,
+				6F84D57E27F2B325005612A1 /* Tokenizer State Tests */,
 			);
 			path = "PEGKit Tests";
 			sourceTree = "<group>";
@@ -652,6 +663,7 @@
 				6FD2691327EE055900C37B5D /* TDTestScaffold.m in Sources */,
 				6FD268F827ED5CFC00C37B5D /* XPBaseExpressionTests.m in Sources */,
 				6FD2691C27EE199000C37B5D /* PKTokenizerTests.m in Sources */,
+				6F84D58027F2B34F005612A1 /* PKWhitespaceStateTests.m in Sources */,
 				6F84D57427EF5556005612A1 /* PKTokenizerStateTests.m in Sources */,
 				6FD2691A27EE121400C37B5D /* PKReaderTests.m in Sources */,
 			);
