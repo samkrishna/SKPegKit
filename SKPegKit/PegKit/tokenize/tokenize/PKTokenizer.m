@@ -40,7 +40,6 @@
 - (instancetype)initWithString:(NSString *)str stream:(NSInputStream *)stm;
 - (PKTokenizerState *)tokenizerStateFor:(PKUniChar)c;
 - (PKTokenizerState *)defaultTokenizerStateFor:(PKUniChar)c;
-- (NSInteger)tokenKindForStringValue:(NSString *)str;
 @end
 
 @implementation PKTokenizer
@@ -128,6 +127,18 @@
     if (_string != s) {
         _string = [s copy];
     }
+
+    self.reader.string = _string;
+    self.lineNumber = 1;
+}
+
+- (void)setStream:(NSInputStream *)s {
+    if (_stream != s) {
+        _stream = s;
+    }
+
+    self.reader.stream = _stream;
+    self.lineNumber = 1;
 }
 
 - (PKToken *)nextToken {
@@ -155,7 +166,31 @@
 }
 
 - (void)setTokenizerState:(PKTokenizerState *)state from:(PKUniChar)start to:(PKUniChar)end {
+    NSParameterAssert(state);
+    NSAssert(self.tokenizerStates, @"");
 
+    for (NSUInteger i = start; i <= end; i++) {
+        [self.tokenizerStates replaceObjectAtIndex:i withObject:state];
+    }
+}
+
+- (PKTokenizerState *)tokenizerStateFor:(PKUniChar)c {
+    PKTokenizerState *state = nil;
+
+    if (c < 0 || c >= STATE_COUNT) {
+        // Customization above 255 is not supported, so fetch default
+        state = [self defaultTokenizerStateFor:c];
+    }
+    else {
+        state = self.tokenizerStates[c];
+    }
+
+    while (state.disabled) {
+        state = [state nextTokenizerStateFor:c tokenizer:self];
+    }
+
+    NSAssert(state, @"");
+    return state;
 }
 
 - (PKTokenizerState *)defaultTokenizerStateFor:(PKUniChar)c {
@@ -257,5 +292,15 @@
 
     return _wordState;
 }
+
+- (NSInteger)tokenKindForStringValue:(NSString *)str {
+    NSInteger x = 0;
+    if (self.delegate) {
+        x = [self.delegate tokenizer:self tokenKindForStringValue:str];
+    }
+
+    return x;
+}
+
 
 @end
