@@ -88,12 +88,34 @@
     [self.radixForSuffix removeObjectForKey:s];
 }
 
-- (void)addGroupingSeparator:(PKUniChar)c forRadix:(NSUInteger)r {
+- (void)addGroupingSeparator:(PKUniChar)sepChar forRadix:(NSUInteger)r {
+    NSParameterAssert(NSNotFound != r);
+    TDConditionAssert(_separatorsForRadix);
+    TDConditionAssert(PKEOF != sepChar);
+    if (PKEOF == sepChar) { return; }
 
+    NSNumber *radixKey = @(r);
+    NSMutableSet *vals = self.separatorsForRadix[radixKey];
+    if (!vals) {
+        vals = [NSMutableSet set];
+        self.separatorsForRadix[radixKey] = vals;
+    }
+
+    NSNumber *sepVal = [NSNumber numberWithInteger:sepChar];
+    [vals addObject:sepVal];
 }
 
-- (void)removeGroupingSeparator:(PKUniChar)c {
+- (void)removeGroupingSeparator:(PKUniChar)sepChar forRadix:(NSUInteger)r {
+    NSParameterAssert(NSNotFound != sepChar);
+    TDConditionAssert(_separatorsForRadix);
+    TDConditionAssert(PKEOF != sepChar);
+    if (PKEOF == sepChar) { return; }
 
+    NSNumber *radixKey = @(r);
+    NSMutableSet *vals = self.separatorsForRadix[radixKey];
+    NSNumber *sepVal = [NSNumber numberWithInteger:sepChar];
+    TDConditionAssert([vals containsObject:sepVal]);
+    [vals removeObject:sepVal];
 }
 
 - (NSUInteger)radixForPrefix:(NSString *)s {
