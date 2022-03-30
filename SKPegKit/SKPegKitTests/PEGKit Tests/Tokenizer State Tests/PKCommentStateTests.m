@@ -7,19 +7,30 @@
 
 #import "TDTestScaffold.h"
 
-@interface PKCommentStateTests : XCTestCase
+@interface PKCommentStateTests : XCTestCase {
+    PKCommentState *commentState;
+    PKReader *r;
+    PKTokenizer *t;
+    NSString *s;
+    PKToken *tok;
+}
 
 @end
 
 @implementation PKCommentStateTests
 
 - (void)setUp {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    r = [[PKReader alloc] init];
+    t = [[PKTokenizer alloc] init];
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+- (void)testSlashSlashFoo {
+    s = @"// foo";
+    r.string = s;
+    t.string = s;
+    tok = [commentState nextTokenFromReader:r startingWith:'/' tokenizer:t];
+    TDEqualObjects([PKToken EOFToken], tok);
+    TDEquals([r read], PKEOF);
 }
-
 
 @end
