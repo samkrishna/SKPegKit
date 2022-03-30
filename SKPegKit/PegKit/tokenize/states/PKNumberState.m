@@ -354,7 +354,7 @@
             if (nextIsDigit) {
                 _c = [r read];
                 _isFraction = YES;
-                _doubleValue = [self absorbDigitsFromReader:r];
+                _doubleValue += [self absorbDigitsFromReader:r];
             }
         }
     }
