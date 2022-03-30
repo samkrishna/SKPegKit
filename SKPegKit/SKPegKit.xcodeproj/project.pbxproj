@@ -262,6 +262,19 @@
 			path = "Tokenizer State Tests";
 			sourceTree = "<group>";
 		};
+		6F84D59527F3DB9B005612A1 /* comment */ = {
+			isa = PBXGroup;
+			children = (
+				6FD2693527EE1D7900C37B5D /* PKCommentState.h */,
+				6FD2693627EE1D7900C37B5D /* PKCommentState.m */,
+				6FD2693927EE1D8800C37B5D /* PKSingleLineCommentState.h */,
+				6FD2693A27EE1D8800C37B5D /* PKSingleLineCommentState.m */,
+				6FD2693D27EE1D9700C37B5D /* PKMultiLineCommentState.h */,
+				6FD2693E27EE1D9700C37B5D /* PKMultiLineCommentState.m */,
+			);
+			path = comment;
+			sourceTree = "<group>";
+		};
 		6FD268A127ECBB4600C37B5D = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +420,7 @@
 		6FD268EB27ED4B3F00C37B5D /* states */ = {
 			isa = PBXGroup;
 			children = (
+				6F84D59527F3DB9B005612A1 /* comment */,
 				6F84D57527EF5826005612A1 /* symbol */,
 				6FD2691D27EE1C5B00C37B5D /* PKNumberState.h */,
 				6FD2691E27EE1C5B00C37B5D /* PKNumberState.m */,
@@ -420,12 +434,6 @@
 				6FD2692E27EE1D5A00C37B5D /* PKWhitespaceState.m */,
 				6FD2693127EE1D6200C37B5D /* PKDelimitState.h */,
 				6FD2693227EE1D6200C37B5D /* PKDelimitState.m */,
-				6FD2693527EE1D7900C37B5D /* PKCommentState.h */,
-				6FD2693627EE1D7900C37B5D /* PKCommentState.m */,
-				6FD2693927EE1D8800C37B5D /* PKSingleLineCommentState.h */,
-				6FD2693A27EE1D8800C37B5D /* PKSingleLineCommentState.m */,
-				6FD2693D27EE1D9700C37B5D /* PKMultiLineCommentState.h */,
-				6FD2693E27EE1D9700C37B5D /* PKMultiLineCommentState.m */,
 				6FD2694127EE1DA200C37B5D /* PKEmailState.h */,
 				6FD2694227EE1DA200C37B5D /* PKEmailState.m */,
 				6FD2694527EE1DA900C37B5D /* PKURLState.h */,
