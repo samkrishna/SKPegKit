@@ -18,7 +18,7 @@
 - (void)removeSuffix:(NSString *)s;
 
 - (void)addGroupingSeparator:(PKUniChar)sepChar forRadix:(NSUInteger)r;
-- (void)removeGroupingSeparator:(PKUniChar)sepChar;
+- (void)removeGroupingSeparator:(PKUniChar)sepChar forRadix:(NSUInteger)r;
 
 @property (nonatomic, readwrite, assign) BOOL allowsTrailingDecimalSeparator;
 @property (nonatomic, readwrite, assign) BOOL allowsScientificNotation;
